@@ -2602,7 +2602,7 @@
 					"conditionInputField": "",
 					"conditions": [
 						{
-							"variable": "otpCreds.resend",
+							"variable": "otpCreds.hasRequestedNewCode",
 							"operator": "is not",
 							"dataValue": "true",
 							"combinator": "none"
@@ -2621,7 +2621,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2885,7 +2885,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "whenNode-031e655f-882e-49a0-86b2-6538ee90f366",
@@ -4425,8 +4425,8 @@
 		}
 	],
 	"viewport": {
-		"x": -498,
-		"y": -123,
+		"x": 237,
+		"y": -319,
 		"zoom": 1
 	}
 }
