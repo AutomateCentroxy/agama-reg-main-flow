@@ -2794,15 +2794,15 @@
 				"previousNodeId": "whenNode-eb8a1212-b4c5-4e5d-a23a-5d31b75b1754",
 				"branching": "continue",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"New OTP code send successfully!\" resendHasSucceed",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Log code resend",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Log code resend"
 				}
 			},
 			"measured": {
@@ -2828,20 +2828,27 @@
 				},
 				"previousNodeId": "logNode-84c6e6ae-92c2-4d60-a399-4782a487be0f",
 				"agamaData": {
-					"assignments": [],
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"A new OTP code has been send to you on your mobile phone.\"",
+							"assignedVariableName": "otpUiFeedback.infoMessage"
+						}
+					],
 					"nodeIcon": "material-symbols:equal",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "UI Feedback",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Provide feedback about the error message to user."
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-04c10daf-ebb4-4aad-9b7b-d7e34311ec01",
@@ -4297,8 +4304,8 @@
 		}
 	],
 	"viewport": {
-		"x": -613.9980027294778,
-		"y": -297.5479374565475,
-		"zoom": 1
+		"x": -758.8863096521252,
+		"y": -391.0489330590086,
+		"zoom": 1.161508731925722
 	}
 }
