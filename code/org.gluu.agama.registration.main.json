@@ -2694,6 +2694,46 @@
 			},
 			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "callNode-eb1805b8-6aeb-48fb-91ee-15ec89f1c93b",
+			"type": "callNode",
+			"position": {
+				"x": 656.8578469545449,
+				"y": 595.9850773414137
+			},
+			"data": {
+				"id": "callNode-eb1805b8-6aeb-48fb-91ee-15ec89f1c93b",
+				"type": "callNode",
+				"position": {
+					"x": 656.8578469545449,
+					"y": 595.9850773414137
+				},
+				"previousNodeId": "logNode-8db155d5-2432-4486-a83b-727d2549baf3",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "sendOTPCode",
+					"javaVariableName": "userRegistrationService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"phone"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "Resend otp",
+					"hasComment": true,
+					"comment": "Resend otp",
+					"asssignedVariableName": "smsOtpSend"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -3966,11 +4006,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-278fc87d-1c1f-41ea-b8c7-e94005c68e4a_continue"
+		},
+		{
+			"id": "logNode-8db155d5-2432-4486-a83b-727d2549baf3-callNode-eb1805b8-6aeb-48fb-91ee-15ec89f1c93b",
+			"type": "default",
+			"source": "logNode-8db155d5-2432-4486-a83b-727d2549baf3",
+			"target": "callNode-eb1805b8-6aeb-48fb-91ee-15ec89f1c93b",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-8db155d5-2432-4486-a83b-727d2549baf3"
 		}
 	],
 	"viewport": {
-		"x": -167.86876211148387,
-		"y": -587.9401273558997,
-		"zoom": 1.161508731925722
+		"x": 59.001997270522224,
+		"y": -390.5479374565475,
+		"zoom": 1
 	}
 }
