@@ -99,7 +99,7 @@
 	  };
 	};
 	function handleResend() {
-	  document.getElementById("hasRequestedNewCode").value = "yes"
+	  document.getElementById("hasRequestedNewCode").value = "true"
 	  var form = document.querySelector("form");
 	  form.submit();
 	}
