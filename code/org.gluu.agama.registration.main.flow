@@ -29,7 +29,7 @@ Repeat 6 times max
      max = Repeat 3 times max
           //  Show UI to collect OTP code from user.
           otpCreds = RRF "smsOtp.ftlh" uiFeedback
-          When otpCreds.hasRequestedNewCode is true
+          When otpCreds.hasRequestedNewCode is "yes"
                // Log new code request
                Log "@info User has requested a new code."
                // Resend otp
@@ -148,5 +148,5 @@ Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_ixlwx = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_ixlwx
+it_tjrns = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_tjrns
