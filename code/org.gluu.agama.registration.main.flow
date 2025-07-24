@@ -46,7 +46,7 @@ Repeat 6 times max
           // Resend otp
           resendHasSucceed = Call userRegistrationService sendOTPCode phone
           When resendHasSucceed is null
-               Log "@ " __________
+               Log "@info Fail to resend new code to user. " resendHasSucceed
           // Log code resend
           Log "@info New OTP code send successfully!" resendHasSucceed
           // Provide feedback about the error message to user.
@@ -147,5 +147,5 @@ Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_teuhb = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_teuhb
+it_uxvwh = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_uxvwh
