@@ -1,8 +1,7 @@
 [#ftl output_format="HTML"]
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>OTP SMS
-	</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" type="text/css"></head>
+<head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>OTP SMS</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" type="text/css"></head>
 <body>
 
   
@@ -19,8 +18,7 @@
 		  <div class="w-full">
 			<div class="bg-white h-full py-4 rounded text-center">
 			  <form method="post" class="my-8">
-				<h1 class="text-2xl font-bold">OTP Verification
-				</h1>
+				<h1 class="text-2xl font-bold">OTP Verification</h1>
 				<div class="flex flex-col mt-4">
 				  [#if phone??]
 				  <div role="alert" class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400">
@@ -61,8 +59,7 @@
 				</div>
 				<div class="flex flex-row justify-center text-center px-2 mt-5">
 				  <div class="flex flex-row items-center justify-center text-center text-sm font-medium space-x-1 text-green-500">
-					<p>Didn't recieve code?
-					</p>
+					<p>Didn't receive code?</p>
 					<button type="submit" id="resendButton" class="text-blue-600 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2-5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none">Resend</button>
 				  </div>
 				</div>
@@ -77,52 +74,57 @@
 </body>
 
 <script>
+	let isResend = false;
+
 	window.onload = function () {
 	  var form = document.querySelector("form");
-	  form.onsubmit = handleFormValidation;
-	  var codeResendButton = document.getElementById('resendButton');
-	  codeResendButton.onclick=handleResend;
+	  form.addEventListener("submit", handleFormValidation);
+
+	  var resendButton = document.getElementById("resendButton");
+	  resendButton.addEventListener("click", handleResend);
+
 	  var firstCodeInput = document.getElementById('1');
 	  firstCodeInput.onpaste = function(e) {
-		var pastedText = undefined;
+		var pastedText;
 		if (window.clipboardData && window.clipboardData.getData) {
 		  pastedText = window.clipboardData.getData('Text');
-		}
-		else if (e.clipboardData && e.clipboardData.getData) {
+		} else if (e.clipboardData && e.clipboardData.getData) {
 		  pastedText = e.clipboardData.getData('text/plain');
 		}
-		var codeInputs = document.querySelectorAll('input[type="number"]')
+		var codeInputs = document.querySelectorAll('input[type="number"]');
 		for (let i = 0; i < codeInputs.length; i++) {
-		  codeInputs[i].value = pastedText.charAt(i)
+		  codeInputs[i].value = pastedText.charAt(i);
 		}
 		return false;
 	  };
 	};
-	function handleResend() {
-	  document.getElementById("hasRequestedNewCode").value = "true"
-	  var form = document.querySelector("form");
-	  form.submit();
+
+	function handleResend(event) {
+	  event.preventDefault(); // stop normal form submission
+	  isResend = true;
+	  document.getElementById("hasRequestedNewCode").value = "yes";
+	  document.querySelector("form").submit();
 	}
-	function handleFormValidation() {
-	  var resend = document.getElementById("hasRequestedNewCode").value
-	  if(resend === "yes"){
-		console.log("Requesting new OTP Code")
-		return true
+
+	function handleFormValidation(event) {
+	  if (isResend) {
+		console.log("Skipping OTP validation: Resend triggered");
+		return true;
 	  }
-	  else{
-		var userCode=""
-		var codeFields = document.querySelectorAll('input[type="number"]')
-		for (let i = 0; i < codeFields.length; i++) {
-		  userCode = userCode.concat(codeFields[i].value)
-		}
-		if (userCode === '' || userCode.length !== 6) {
-		  console.log("No code provided!")
-		  return false
-		}
-		else{
-		  document.getElementById("code").value = userCode
-		}
-		return true
+
+	  var userCode = "";
+	  var codeFields = document.querySelectorAll('input[type="number"]');
+	  for (let i = 0; i < codeFields.length; i++) {
+		userCode = userCode.concat(codeFields[i].value);
+	  }
+
+	  if (userCode === '' || userCode.length !== 6) {
+		console.log("Invalid or incomplete OTP");
+		event.preventDefault();
+		return false;
+	  } else {
+		document.getElementById("code").value = userCode;
+		return true;
 	  }
 	}
   </script>
