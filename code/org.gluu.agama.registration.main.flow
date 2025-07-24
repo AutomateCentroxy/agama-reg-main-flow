@@ -55,7 +55,7 @@ Repeat 6 times max
           // Log code resend
           Log "@info New OTP code send successfully!" resendHasSucceed
           // Provide feedback about the error message to user.
-          otpUiFeedback.infoMessage = "A new OTP code has been send to you on your mobile phone."
+          uiFeedback.errorMessage = "A new OTP code has been send to you on your mobile phone."
      Log "@info OTP verification loop completed"
      isPhoneVerified = otpValidationResult
      // Check if OTP validation vas okay
@@ -152,5 +152,5 @@ Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_vgxgi = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_vgxgi
+it_vawow = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_vawow
