@@ -36,11 +36,13 @@ Repeat 6 times max
                otpValidationResult = Call userRegistrationService validateOTPCode phone otpCreds.code
                // Add log entry withvalidation result in log file.
                Log "@info OTP validation result is:" otpValidationResult
-               Quit When otpValidationResult is true
-               // The maximum number of attempt has been reached.
-               Log "@error Invalid code provided "
-               // Provide feedback to user.
-               uiFeedback.errorMessage = "Invalid code provided."
+               When otpValidationResult is true
+                    Log "@info OTP validated Successfully"
+               Otherwise
+                    // The maximum number of attempt has been reached.
+                    Log "@error Invalid code provided "
+                    // Provide feedback to user.
+                    uiFeedback.errorMessage = "Invalid code provided."
           // Log new code request
           Log "@info User has requested a new code."
           // Resend otp
@@ -149,5 +151,5 @@ Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_irbns = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_irbns
+it_ezecx = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_ezecx
