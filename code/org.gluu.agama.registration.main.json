@@ -1590,7 +1590,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2868,7 +2868,7 @@
 						{
 							"variable": "otpCreds.hasRequestedNewCode",
 							"operator": "is",
-							"dataValue": "true",
+							"dataValue": "\"yes\"",
 							"combinator": "none"
 						}
 					],
@@ -2885,7 +2885,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		}
 	],
@@ -4258,8 +4258,8 @@
 		}
 	],
 	"viewport": {
-		"x": 295.1431733424515,
-		"y": 85.56125737410343,
-		"zoom": 0.5
+		"x": 376.3101315961658,
+		"y": -121.32223503807882,
+		"zoom": 0.7412335049014176
 	}
 }
