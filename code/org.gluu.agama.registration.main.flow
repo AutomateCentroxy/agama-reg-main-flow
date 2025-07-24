@@ -38,6 +38,7 @@ Repeat 6 times max
                Log "@info OTP validation result is:" otpValidationResult
                When otpValidationResult is true
                     Log "@info OTP validated Successfully"
+                    Finish otpValidationResult
                Otherwise
                     // The maximum number of attempt has been reached.
                     Log "@error Invalid code provided "
@@ -151,5 +152,5 @@ Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_ezecx = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_ezecx
+it_vgxgi = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_vgxgi
