@@ -148,5 +148,5 @@ Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_tevje = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_tevje
+it_jihzo = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_jihzo
