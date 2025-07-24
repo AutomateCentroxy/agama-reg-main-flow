@@ -2927,41 +2927,6 @@
 			"dragging": false
 		},
 		{
-			"id": "finishNode-8293e209-dfc2-4b22-b1fa-8abb32311b92",
-			"type": "finishNode",
-			"position": {
-				"x": 1716.4038741789286,
-				"y": 869.892163379459
-			},
-			"data": {
-				"id": "finishNode-8293e209-dfc2-4b22-b1fa-8abb32311b92",
-				"type": "finishNode",
-				"position": {
-					"x": 1560.4089981593531,
-					"y": 1133.5921362281854
-				},
-				"previousNodeId": "logNode-d3eb3427-1a56-489a-8b2e-81bc502f1bfb",
-				"agamaData": {
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "otpValidationResult return",
-					"hasComment": true,
-					"comment": "",
-					"flowfilename": "",
-					"returnVariable": "otpValidationResult",
-					"finishMode": "withVariable",
-					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 122
-			},
-			"selected": false,
-			"dragging": false
-		},
-		{
 			"id": "whenNode-aca5dfdd-5873-4635-ab56-c74c9f4e4655",
 			"type": "whenNode",
 			"position": {
@@ -3001,7 +2966,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		}
 	],
@@ -4355,25 +4320,6 @@
 			"sourceHandle": "source_whenNode-031e655f-882e-49a0-86b2-6538ee90f366_success"
 		},
 		{
-			"id": "logNode-d3eb3427-1a56-489a-8b2e-81bc502f1bfb-finishNode-8293e209-dfc2-4b22-b1fa-8abb32311b92",
-			"type": "default",
-			"source": "logNode-d3eb3427-1a56-489a-8b2e-81bc502f1bfb",
-			"target": "finishNode-8293e209-dfc2-4b22-b1fa-8abb32311b92",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_logNode-d3eb3427-1a56-489a-8b2e-81bc502f1bfb"
-		},
-		{
 			"id": "rrfNode-53a12e63-aa33-4969-80c9-deffb2068fea-whenNode-aca5dfdd-5873-4635-ab56-c74c9f4e4655",
 			"type": "default",
 			"source": "rrfNode-53a12e63-aa33-4969-80c9-deffb2068fea",
@@ -4430,8 +4376,8 @@
 		}
 	],
 	"viewport": {
-		"x": 162.84894757063603,
-		"y": -249.66738182826703,
-		"zoom": 0.7412335049014176
+		"x": -717,
+		"y": -463,
+		"zoom": 1
 	}
 }
