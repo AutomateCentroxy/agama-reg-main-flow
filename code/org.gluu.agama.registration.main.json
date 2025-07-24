@@ -2603,7 +2603,7 @@
 					"conditions": [
 						{
 							"variable": "otpCreds.hasRequestedNewCode",
-							"operator": "is not",
+							"operator": "is",
 							"dataValue": "true",
 							"combinator": "none"
 						}
@@ -4425,8 +4425,8 @@
 		}
 	],
 	"viewport": {
-		"x": 237,
-		"y": -319,
+		"x": 96,
+		"y": -310,
 		"zoom": 1
 	}
 }
