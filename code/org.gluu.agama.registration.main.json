@@ -3317,8 +3317,8 @@
 			"id": "callNode-e559b1dd-8e75-4f1c-a145-95f946643a81",
 			"type": "callNode",
 			"position": {
-				"x": 8319.501763608574,
-				"y": 3185.773514129717
+				"x": 8316.53682958897,
+				"y": 3167.983910012083
 			},
 			"data": {
 				"id": "callNode-e559b1dd-8e75-4f1c-a145-95f946643a81",
@@ -3352,8 +3352,50 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "whenNode-071f072d-e7f8-4f39-a163-66dfa82298e6",
+			"type": "whenNode",
+			"position": {
+				"x": 8566.53682958897,
+				"y": 3167.983910012083
+			},
+			"data": {
+				"id": "whenNode-071f072d-e7f8-4f39-a163-66dfa82298e6",
+				"type": "whenNode",
+				"position": {
+					"x": 8566.53682958897,
+					"y": 3167.983910012083
+				},
+				"previousNodeId": "callNode-e559b1dd-8e75-4f1c-a145-95f946643a81",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "inumm",
+							"operator": "is",
+							"dataValue": "null",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "If user registration success"
+				}
+			},
+			"measured": {
+				"width": 109,
+				"height": 58
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -4970,11 +5012,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-44a6330c-c7f9-46d6-8900-0332b70e2277"
+		},
+		{
+			"id": "callNode-e559b1dd-8e75-4f1c-a145-95f946643a81-whenNode-071f072d-e7f8-4f39-a163-66dfa82298e6",
+			"type": "default",
+			"source": "callNode-e559b1dd-8e75-4f1c-a145-95f946643a81",
+			"target": "whenNode-071f072d-e7f8-4f39-a163-66dfa82298e6",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-e559b1dd-8e75-4f1c-a145-95f946643a81"
 		}
 	],
 	"viewport": {
-		"x": -5130.604763225219,
-		"y": -1560.230422107471,
+		"x": -5193.604763225219,
+		"y": -1585.230422107471,
 		"zoom": 0.6745512671698494
 	}
 }
