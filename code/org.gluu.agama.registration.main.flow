@@ -128,8 +128,8 @@ maxJourney = Repeat 6 times max
                                                             uiInput.matches = false
                                                             sendMail = false
                                              // Finish flow when user exceeds maximum number of flows allowed
-                                             it_jivwa = {success:false, error: "You have exceeded the number of attempts allowed"}
-                                             Finish it_jivwa
+                                             it_lhtri = {success:false, error: "You have exceeded the number of attempts allowed"}
+                                             Finish it_lhtri
                                         Otherwise
                                              // Password and Confirm password doesn't match
                                              Log "@trace Password and Confirm password doesn't match"
@@ -163,5 +163,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_zwxsi = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_zwxsi
+it_fjdao = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_fjdao
