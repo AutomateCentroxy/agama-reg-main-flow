@@ -90,6 +90,9 @@ maxJourney = Repeat 6 times max
                                                        Log "@info User has requested a new code."
                                                        // Resend Email otp
                                                        resendEmailHasSucceed = Call userRegistrationService sendEmail email
+                                                       When resendEmailHasSucceed is null
+                                                            Log "@ " __________
+                                                       Log "@ " __________
                                                   Otherwise
                                                        Log "@ " __________
                                              // Email OTP verification loop completed
@@ -127,5 +130,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_ddxuw = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_ddxuw
+it_ntoyc = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_ntoyc
