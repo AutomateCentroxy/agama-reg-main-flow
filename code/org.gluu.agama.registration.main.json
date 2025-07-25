@@ -2228,7 +2228,7 @@
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "emailVerificationSuccess check",
+					"displayName": "",
 					"hasComment": true,
 					"comment": "Variable assignment after successful email delivery"
 				}
