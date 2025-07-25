@@ -101,6 +101,8 @@ maxJourney = Repeat 6 times max
                                                        // resendEmailHasSucceed
                                                        When emailOtpCreds.passcode is resendEmailHasSucceed
                                                             Log "@info Email Otp Verified"
+                                                       Otherwise
+                                                            uiFeedback.infoMessage = "Invalid OTP, Please Try Again!"
                                                   Otherwise
                                                        //  Add log entry with collected code in log file.
                                                        Log "@info Password provided by the user " 
@@ -159,5 +161,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_ykppu = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_ykppu
+it_zolos = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_zolos
