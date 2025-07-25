@@ -3196,6 +3196,41 @@
 				"width": 109,
 				"height": 58
 			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "logNode-43a9ee7c-d712-46ff-96f6-256c1f5f5980",
+			"type": "logNode",
+			"position": {
+				"x": 7779.475154343898,
+				"y": 3227.2825904041965
+			},
+			"data": {
+				"id": "logNode-43a9ee7c-d712-46ff-96f6-256c1f5f5980",
+				"type": "logNode",
+				"position": {
+					"x": 7798.747225471335,
+					"y": 3276.2040017276904
+				},
+				"previousNodeId": "whenNode-f3574a9a-ca98-4301-aafe-7c7bee8ec506",
+				"branching": "success",
+				"agamaData": {
+					"logMessage": "\"Email Otp Verified\"",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "Email Otp Verified",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
 			"selected": true,
 			"dragging": false
 		}
@@ -4738,11 +4773,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-b233e084-97cd-4c22-bb7b-842c8c63c18b"
+		},
+		{
+			"id": "whenNode-f3574a9a-ca98-4301-aafe-7c7bee8ec506-logNode-43a9ee7c-d712-46ff-96f6-256c1f5f5980",
+			"type": "default",
+			"source": "whenNode-f3574a9a-ca98-4301-aafe-7c7bee8ec506",
+			"target": "logNode-43a9ee7c-d712-46ff-96f6-256c1f5f5980",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "Condition met",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-f3574a9a-ca98-4301-aafe-7c7bee8ec506_success"
 		}
 	],
 	"viewport": {
-		"x": -6123.805622619495,
-		"y": -2350.589941988489,
-		"zoom": 0.9100388240808991
+		"x": -4941.086278276716,
+		"y": -1692.1180156141818,
+		"zoom": 0.6745512671698494
 	}
 }
