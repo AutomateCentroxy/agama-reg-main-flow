@@ -2362,7 +2362,7 @@
 				},
 				"previousNodeId": "assignmentNode-da75cecb-6a66-4585-b1eb-28ac544cfc56",
 				"agamaData": {
-					"logMessage": "\"E-mail verification passed, initiating user provisioning flow\" + userInput",
+					"logMessage": "\"E-mail verification passed, initiating user provisioning flow \", userInput",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
