@@ -199,8 +199,8 @@ public class JansUserRegistration extends UserRegistration {
         user.setAttribute("givenName", uid);
         user.setAttribute("sn", uid);
         user.setAttribute("userPassword", password);
-        user.setAttribute(PHONE, phoneNumber, false);
-        user.setAttribute(MOBILE, phoneNumber, false);
+        user.setAttribute(PHONE, phoneNumber);
+        user.setAttribute(MOBILE, phoneNumber);
 
         if (StringHelper.isNotEmpty(combined.get("residenceCountry"))) {
             user.setAttribute("residenceCountry", combined.get("residenceCountry"));
