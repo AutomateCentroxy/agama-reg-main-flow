@@ -2995,8 +2995,8 @@
 			"id": "assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
 			"type": "assignmentNode",
 			"position": {
-				"x": 6104.528434230683,
-				"y": 1356.8712253723713
+				"x": 6090.528434230683,
+				"y": 1308.8712253723713
 			},
 			"data": {
 				"id": "assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
@@ -3033,7 +3033,8 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -4442,8 +4443,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5339.533673990744,
-		"y": -1114.6938706231506,
-		"zoom": 1
+		"x": -2662.149919911478,
+		"y": -141.28516471472176,
+		"zoom": 0.5494271087884399
 	}
 }
