@@ -3231,7 +3231,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -3272,6 +3272,44 @@
 				"height": 122
 			},
 			"selected": false
+		},
+		{
+			"id": "assignmentNode-44a6330c-c7f9-46d6-8900-0332b70e2277",
+			"type": "assignmentNode",
+			"position": {
+				"x": 8029.475154343898,
+				"y": 3227.2825904041965
+			},
+			"data": {
+				"id": "assignmentNode-44a6330c-c7f9-46d6-8900-0332b70e2277",
+				"type": "assignmentNode",
+				"position": {
+					"x": 8029.475154343898,
+					"y": 3227.2825904041965
+				},
+				"previousNodeId": "logNode-43a9ee7c-d712-46ff-96f6-256c1f5f5980",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "EmailOtpValidationResult"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -4850,11 +4888,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-f3574a9a-ca98-4301-aafe-7c7bee8ec506_otherwise"
+		},
+		{
+			"id": "logNode-43a9ee7c-d712-46ff-96f6-256c1f5f5980-assignmentNode-44a6330c-c7f9-46d6-8900-0332b70e2277",
+			"type": "default",
+			"source": "logNode-43a9ee7c-d712-46ff-96f6-256c1f5f5980",
+			"target": "assignmentNode-44a6330c-c7f9-46d6-8900-0332b70e2277",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-43a9ee7c-d712-46ff-96f6-256c1f5f5980"
 		}
 	],
 	"viewport": {
-		"x": -4926.086278276716,
-		"y": -1606.1180156141818,
+		"x": -5105.086278276716,
+		"y": -1611.1180156141818,
 		"zoom": 0.6745512671698494
 	}
 }
