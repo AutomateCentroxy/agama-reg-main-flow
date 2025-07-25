@@ -10,7 +10,7 @@ emailObj = {}
 sendMail = true
 uiInput = {matches: true, resent: false}
 // Iterate x times max
-Repeat 6 times max
+maxJourney = Repeat 6 times max
      // Retrieve user profile  from UI
      userInput = RRF "profile.ftlh" uiFeedback
      // create an instance of Registration service
@@ -157,5 +157,5 @@ Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_vvvgx = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_vvvgx
+it_bgcen = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_bgcen
