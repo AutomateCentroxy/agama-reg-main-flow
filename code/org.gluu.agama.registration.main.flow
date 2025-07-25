@@ -82,7 +82,8 @@ maxJourney = Repeat 6 times max
                                              Log "@info OTP generated and send to: " email
                                              EmailOtpValidationResult = false
                                              EmailMax = Repeat 6 times max
-                                                  Log "@ " __________
+                                                  // "Email OTP verification loop Started"
+                                                  Log "@info Email OTP verification loop Started"
                                              // Email OTP verification loop completed
                                              Log "@info Email OTP verification loop completed"
                                         Otherwise
@@ -118,5 +119,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_mzedn = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_mzedn
+it_mjtgd = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_mjtgd
