@@ -3015,8 +3015,8 @@
 			"id": "logNode-fa5e98cf-3528-4d0b-b7a2-2b831b07a3fe",
 			"type": "logNode",
 			"position": {
-				"x": 6810.610291103697,
-				"y": 2769.9931659382096
+				"x": 6793.850984032613,
+				"y": 2686.1966305827927
 			},
 			"data": {
 				"id": "logNode-fa5e98cf-3528-4d0b-b7a2-2b831b07a3fe",
@@ -3028,13 +3028,13 @@
 				"previousNodeId": "whenNode-c5fc85fd-5837-4447-987e-346d0bbd1365",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "\"xxxxxxxxxxxxxxxxxx\"",
+					"logMessage": "\"Email Otp Verified\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Email Otp Verified",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -3043,7 +3043,8 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": true,
+			"dragging": false
 		},
 		{
 			"id": "logNode-9d1f2812-ab2a-495b-ab62-1747b4dcaa32",
@@ -3077,7 +3078,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -4546,8 +4547,8 @@
 		}
 	],
 	"viewport": {
-		"x": -6491.257633543729,
-		"y": -2501.708215761573,
-		"zoom": 1.0570180405613803
+		"x": -5767.336003803549,
+		"y": -1980.9582028227123,
+		"zoom": 0.8950250709279727
 	}
 }
