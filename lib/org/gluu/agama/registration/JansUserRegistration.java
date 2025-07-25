@@ -44,7 +44,6 @@ public class JansUserRegistration extends UserRegistration {
     private static final String COUNTRY = "residenceCountry";
     private static final String REFERRAL = "referralCode";
     private static final String EXT_ATTR = "jansExtUid";
-    private static final String PHONE = "telephoneNumber";
     private static final String MOBILE = "mobile";
     private static final int OTP_LENGTH = 6;
     public static final int OTP_CODE_LENGTH = 6;
@@ -199,8 +198,7 @@ public class JansUserRegistration extends UserRegistration {
         user.setAttribute("givenName", uid);
         user.setAttribute("sn", uid);
         user.setAttribute("userPassword", password);
-        user.setAttribute(PHONE, phoneNumber);
-        user.setAttribute(MOBILE, phoneNumber);
+        user.setAttribute("mobile", phoneNumber);
 
         if (StringHelper.isNotEmpty(combined.get("residenceCountry"))) {
             user.setAttribute("residenceCountry", combined.get("residenceCountry"));
