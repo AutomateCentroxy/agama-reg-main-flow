@@ -958,7 +958,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2350,8 +2350,8 @@
 			"id": "logNode-3ef73ef8-4026-43c3-a96f-4547ecddb951",
 			"type": "logNode",
 			"position": {
-				"x": 7583.073715237311,
-				"y": 2632.212362221496
+				"x": 7479.943917788446,
+				"y": 2638.351040641071
 			},
 			"data": {
 				"id": "logNode-3ef73ef8-4026-43c3-a96f-4547ecddb951",
@@ -2362,7 +2362,7 @@
 				},
 				"previousNodeId": "assignmentNode-da75cecb-6a66-4585-b1eb-28ac544cfc56",
 				"agamaData": {
-					"logMessage": "\"E-mail verification passed, initiating user provisioning flow\"",
+					"logMessage": "\"E-mail verification passed, initiating user provisioning flow\" + userInput",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -2377,7 +2377,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -4745,8 +4745,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3137.0730634907422,
-		"y": -977.4498992795125,
-		"zoom": 0.5
+		"x": -5326.84082916218,
+		"y": -1799.2438699316367,
+		"zoom": 0.8145075630702155
 	}
 }
