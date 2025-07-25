@@ -109,7 +109,8 @@ maxJourney = Repeat 6 times max
                                                                  RRF "__________" 
                                                                  Log "@ " __________
                                                                  Finish __________
-                                                            Log "@ " __________
+                                                            // Registration failed log
+                                                            Log "@info User registration failed. Error : %" E
                                                        Otherwise
                                                             uiFeedback.infoMessage = "Invalid OTP, Please Try Again!"
                                                   Otherwise
@@ -170,5 +171,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_khqua = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_khqua
+it_yngcj = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_yngcj
