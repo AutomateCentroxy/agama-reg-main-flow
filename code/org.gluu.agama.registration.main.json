@@ -1330,8 +1330,8 @@
 			"id": "logNode-03a587ef-b76f-4d16-a191-ab20a6be711d",
 			"type": "logNode",
 			"position": {
-				"x": 3506.8423600495157,
-				"y": 730.0660840894958
+				"x": 3504.2897025118577,
+				"y": 892.1598377307728
 			},
 			"data": {
 				"id": "logNode-03a587ef-b76f-4d16-a191-ab20a6be711d",
@@ -1996,8 +1996,8 @@
 			"id": "callNode-a5644573-0c3c-4c0e-bbfa-5edf559cf724",
 			"type": "callNode",
 			"position": {
-				"x": 3731.1508340560204,
-				"y": 941.3948724125288
+				"x": 3706.90058744827,
+				"y": 1418.741831954557
 			},
 			"data": {
 				"id": "callNode-a5644573-0c3c-4c0e-bbfa-5edf559cf724",
@@ -2006,7 +2006,7 @@
 					"x": 3749.9547665428045,
 					"y": 936.6938892908328
 				},
-				"previousNodeId": "logNode-03a587ef-b76f-4d16-a191-ab20a6be711d",
+				"previousNodeId": "repeatNode-01372cb5-cd79-4ec5-aed9-4e82a9943a28",
 				"agamaData": {
 					"javaClassName": "",
 					"javaMethodName": "sendEmail",
@@ -2024,7 +2024,8 @@
 					"hasComment": true,
 					"comment": "Call email service to send mail",
 					"asssignedVariableName": "otpCode"
-				}
+				},
+				"branching": "continue"
 			},
 			"measured": {
 				"width": 170,
@@ -2037,8 +2038,8 @@
 			"id": "logNode-ed7219b0-370c-44ec-b018-4582e0b67b06",
 			"type": "logNode",
 			"position": {
-				"x": 3961.1508340560204,
-				"y": 1271.394872412529
+				"x": 3957.3218477495334,
+				"y": 1404.1330643707402
 			},
 			"data": {
 				"id": "logNode-ed7219b0-370c-44ec-b018-4582e0b67b06",
@@ -2387,7 +2388,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2890,6 +2891,83 @@
 				"height": 58
 			},
 			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "repeatNode-6372ab6a-c9b1-4a51-b846-87ae266348db",
+			"type": "repeatNode",
+			"position": {
+				"x": 3754.2897025118577,
+				"y": 892.1598377307728
+			},
+			"data": {
+				"id": "repeatNode-6372ab6a-c9b1-4a51-b846-87ae266348db",
+				"type": "repeatNode",
+				"position": {
+					"x": 3754.2897025118577,
+					"y": 892.1598377307728
+				},
+				"previousNodeId": "logNode-03a587ef-b76f-4d16-a191-ab20a6be711d",
+				"agamaData": {
+					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
+					"maxIteration": "6",
+					"maxIterationVariableName": "maxEmail",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": false
+		},
+		{
+			"id": "whenNode-e55eda45-3453-49c9-8777-0fdf3457f0fc",
+			"type": "whenNode",
+			"position": {
+				"x": 3920.052003769147,
+				"y": 1176.6207144891546
+			},
+			"data": {
+				"id": "whenNode-e55eda45-3453-49c9-8777-0fdf3457f0fc",
+				"type": "whenNode",
+				"position": {
+					"x": 4004.2897025118577,
+					"y": 1142.1598377307728
+				},
+				"previousNodeId": "repeatNode-6372ab6a-c9b1-4a51-b846-87ae266348db",
+				"branching": "repeat",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "sendMail",
+							"operator": "is",
+							"dataValue": "true",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 109,
+				"height": 58
+			},
+			"selected": true,
 			"dragging": false
 		}
 	],
@@ -3736,25 +3814,6 @@
 			"targetHandle": "target_callNode-247e483d-3c2f-4399-b739-a95767257b73"
 		},
 		{
-			"id": "logNode-03a587ef-b76f-4d16-a191-ab20a6be711d-callNode-a5644573-0c3c-4c0e-bbfa-5edf559cf724",
-			"type": "default",
-			"source": "logNode-03a587ef-b76f-4d16-a191-ab20a6be711d",
-			"target": "callNode-a5644573-0c3c-4c0e-bbfa-5edf559cf724",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_logNode-03a587ef-b76f-4d16-a191-ab20a6be711d"
-		},
-		{
 			"id": "callNode-a5644573-0c3c-4c0e-bbfa-5edf559cf724-logNode-ed7219b0-370c-44ec-b018-4582e0b67b06",
 			"type": "default",
 			"source": "callNode-a5644573-0c3c-4c0e-bbfa-5edf559cf724",
@@ -4259,11 +4318,49 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__logNode-d3eb3427-1a56-489a-8b2e-81bc502f1bfbsource_logNode-d3eb3427-1a56-489a-8b2e-81bc502f1bfb-assignmentNode-8e32c650-1631-4d44-8105-e98367587096target_assignmentNode-8e32c650-1631-4d44-8105-e98367587096"
+		},
+		{
+			"id": "logNode-03a587ef-b76f-4d16-a191-ab20a6be711d-repeatNode-6372ab6a-c9b1-4a51-b846-87ae266348db",
+			"type": "default",
+			"source": "logNode-03a587ef-b76f-4d16-a191-ab20a6be711d",
+			"target": "repeatNode-6372ab6a-c9b1-4a51-b846-87ae266348db",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-03a587ef-b76f-4d16-a191-ab20a6be711d"
+		},
+		{
+			"id": "repeatNode-6372ab6a-c9b1-4a51-b846-87ae266348db-whenNode-e55eda45-3453-49c9-8777-0fdf3457f0fc",
+			"type": "default",
+			"source": "repeatNode-6372ab6a-c9b1-4a51-b846-87ae266348db",
+			"target": "whenNode-e55eda45-3453-49c9-8777-0fdf3457f0fc",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "repeat",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_repeatNode-6372ab6a-c9b1-4a51-b846-87ae266348db_repeat"
 		}
 	],
 	"viewport": {
-		"x": -1795.4803985312024,
-		"y": -152.25946302398586,
-		"zoom": 0.5
+		"x": -2544.776996957983,
+		"y": -699.8366232188789,
+		"zoom": 0.7834971869493407
 	}
 }
