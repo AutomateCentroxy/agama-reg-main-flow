@@ -101,6 +101,9 @@ Repeat 6 times max
                                                        uiInput.resent = false
                                                        // If user clicked on "resend code" button
                                                        When uiInput.resent is "yes"
+                                                            // Variable assignment when user clicked on "resend code" button
+                                                            sendMail = true
+                                                            uiInput.resent = true
                                         Otherwise
                                              // Password and Confirm password doesn't match
                                              Log "@trace Password and Confirm password doesn't match"
@@ -134,5 +137,5 @@ Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_zfcif = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_zfcif
+it_asrfr = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_asrfr
