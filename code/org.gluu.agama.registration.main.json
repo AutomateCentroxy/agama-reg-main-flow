@@ -2418,6 +2418,39 @@
 				"width": 170,
 				"height": 122
 			},
+			"selected": false
+		},
+		{
+			"id": "logNode-e32a395a-dfe0-474d-8405-ac3f73202494",
+			"type": "logNode",
+			"position": {
+				"x": 4900.170279388967,
+				"y": 2604.620345182709
+			},
+			"data": {
+				"id": "logNode-e32a395a-dfe0-474d-8405-ac3f73202494",
+				"type": "logNode",
+				"position": {
+					"x": 4900.170279388967,
+					"y": 2604.620345182709
+				},
+				"previousNodeId": "callNode-856d766d-1d5a-40ec-a5b5-c0e95d57ba23",
+				"agamaData": {
+					"logMessage": "\"OTP generated and send to: \" email",
+					"logLevel": "info",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "Email OTP code send",
+					"hasComment": true,
+					"comment": "The OTP Code has been send to user."
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
 			"selected": true
 		}
 	],
@@ -3542,11 +3575,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_logNode-03a587ef-b76f-4d16-a191-ab20a6be711d"
+		},
+		{
+			"id": "callNode-856d766d-1d5a-40ec-a5b5-c0e95d57ba23-logNode-e32a395a-dfe0-474d-8405-ac3f73202494",
+			"type": "default",
+			"source": "callNode-856d766d-1d5a-40ec-a5b5-c0e95d57ba23",
+			"target": "logNode-e32a395a-dfe0-474d-8405-ac3f73202494",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_callNode-856d766d-1d5a-40ec-a5b5-c0e95d57ba23"
 		}
 	],
 	"viewport": {
-		"x": -5432.169417115791,
-		"y": -2653.671797930375,
+		"x": -5520.169417115791,
+		"y": -2697.671797930375,
 		"zoom": 1.2277356839150602
 	}
 }
