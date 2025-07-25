@@ -2562,8 +2562,8 @@
 			"id": "logNode-182b6428-c5c9-4d00-9cd7-d2a60fa5eb4d",
 			"type": "logNode",
 			"position": {
-				"x": 5650.170279388967,
-				"y": 2854.620345182709
+				"x": 5586.436734769508,
+				"y": 2855.719199400286
 			},
 			"data": {
 				"id": "logNode-182b6428-c5c9-4d00-9cd7-d2a60fa5eb4d",
@@ -2589,6 +2589,42 @@
 			"measured": {
 				"width": 168,
 				"height": 120
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "rrfNode-fa9c7a9f-8815-4937-afee-66dc29f113ce",
+			"type": "rrfNode",
+			"position": {
+				"x": 5836.436734769508,
+				"y": 2855.719199400286
+			},
+			"data": {
+				"id": "rrfNode-fa9c7a9f-8815-4937-afee-66dc29f113ce",
+				"type": "rrfNode",
+				"position": {
+					"x": 5836.436734769508,
+					"y": 2855.719199400286
+				},
+				"previousNodeId": "logNode-182b6428-c5c9-4d00-9cd7-d2a60fa5eb4d",
+				"agamaData": {
+					"assignments": [],
+					"nodeIcon": "ph:globe-simple",
+					"templatePath": "emailOtp.ftlh",
+					"asssignedVariableName": "emailOtpCreds",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "RRF",
+					"hasComment": true,
+					"comment": " Show UI to collect OTP code from user.",
+					"arguments": "uiFeedback"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
 			},
 			"selected": false
 		}
@@ -3809,11 +3845,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_repeatNode-81eab272-9bad-4d8d-9ad5-623ea7d6b550_repeat"
+		},
+		{
+			"id": "logNode-182b6428-c5c9-4d00-9cd7-d2a60fa5eb4d-rrfNode-fa9c7a9f-8815-4937-afee-66dc29f113ce",
+			"type": "default",
+			"source": "logNode-182b6428-c5c9-4d00-9cd7-d2a60fa5eb4d",
+			"target": "rrfNode-fa9c7a9f-8815-4937-afee-66dc29f113ce",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-182b6428-c5c9-4d00-9cd7-d2a60fa5eb4d"
 		}
 	],
 	"viewport": {
-		"x": -4659.259724015862,
-		"y": -2130.3706028826487,
+		"x": -4943.259724015862,
+		"y": -2177.3706028826487,
 		"zoom": 0.9100388240808991
 	}
 }
