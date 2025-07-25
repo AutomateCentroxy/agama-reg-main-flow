@@ -76,62 +76,6 @@ maxJourney = Repeat 6 times max
                                         // Matching password 
                                         When userPassword is confirmPassword
                                              Log "@info Send-Email-page-trigger"
-                                             verified = false
-                                             maxEmail = Repeat 6 times max
-                                                  // When send mail is allowed
-                                                  When sendMail is true
-                                                       // Tun off send mail
-                                                       sendMail = false
-                                                       // Call email service to send mail
-                                                       otpCode = Call userRegistrationService sendEmail email
-                                                       // Send Email Otp method called
-                                                       Log "@info Send Email Otp method called"
-                                                       // When OTP code null
-                                                       When otpCode is null
-                                                            // Variable assignment for unsuccessful Email delivery
-                                                            emailObj = { success: false, error: "Unable_to_deliver_email_message" }
-                                                            uiFeedback.errorMessage = "Unable to send OTP to the provided email address"
-                                                            // Finish flow unsuccessfully
-                                                            Finish emailObj
-                                                       // Variable assignment after successful email delivery
-                                                       emailObj.email = email
-                                                       emailObj.matches = uiInput.matches
-                                                       emailObj.resent = uiInput.resent
-                                                       // Redirect to page asking for OTP received using email
-                                                       uiInput = RRF "emailOtp.ftlh" emailObj
-                                                       uiInput.resent = false
-                                                       // If user clicked on "resend code" button
-                                                       When uiInput.resend is "yes"
-                                                            // Variable assignment when user clicked on "resend code" button
-                                                            sendMail = true
-                                                            uiInput.resent = true
-                                                       // When passcode entered by user matches
-                                                       When uiInput.passcode is otpCode
-                                                            verified = true
-                                                            Log "@info E-mail verification passed, initiating user provisioning flow"
-                                                            inum | E = Call userRegistrationService addNewUser userInput passwordInput
-                                                            // If user registration success
-                                                            When inum is not null
-                                                                 // Show user creation log
-                                                                 Log "@info User % has been created" inum
-                                                                 // Show acknowledgement UI page for successful registration
-                                                                 acknowledgementInput = RRF "acknowledgement.ftlh" 
-                                                                 // Finish the flow successfully
-                                                                 Log "@info Finish the flow successfully"
-                                                                 // Finish the flow successfully
-                                                                 Finish userName
-                                                            // Registration failed log
-                                                            Log "@info User registration failed. Error : %" E
-                                                       Otherwise
-                                                            // Invalid email OTP entered
-                                                            Log "@error Invalid email OTP entered"
-                                                            // Variable assigned when OTP entered by user does not matches
-                                                            uiInput.matches = false
-                                                            sendMail = false
-                                                            uiFeedback.errorMessage = "Incorrect OTP entered. Please try again."
-                                             // Finish flow when user exceeds maximum number of flows allowed
-                                             it_cwlzb = {success:false, error: "You have exceeded the number of attempts allowed"}
-                                             Finish it_cwlzb
                                         Otherwise
                                              // Password and Confirm password doesn't match
                                              Log "@trace Password and Confirm password doesn't match"
@@ -165,5 +109,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_yirzc = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_yirzc
+it_bifzv = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_bifzv
