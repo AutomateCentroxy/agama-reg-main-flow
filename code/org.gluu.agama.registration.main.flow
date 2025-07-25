@@ -105,6 +105,7 @@ maxJourney = Repeat 6 times max
                                                             Log "@info Email Otp Verified"
                                                        Otherwise
                                                             Log "@info xxxxxxxxxxxxxxxxxxxx"
+                                                            uiFeedback.infoMessage = "Invalid OTP, Please Try Again!"
                                              // Email OTP verification loop completed
                                              Log "@info Email OTP verification loop completed"
                                         Otherwise
@@ -140,5 +141,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_uwfgw = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_uwfgw
+it_ugfso = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_ugfso
