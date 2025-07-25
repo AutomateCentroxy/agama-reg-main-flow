@@ -76,6 +76,7 @@ maxJourney = Repeat 6 times max
                                         // Matching password 
                                         When userPassword is confirmPassword
                                              Log "@info Send-Email-page-trigger"
+                                             verified = false
                                              maxEmail = Repeat 6 times max
                                                   // When send mail is allowed
                                                   When sendMail is true
@@ -129,8 +130,8 @@ maxJourney = Repeat 6 times max
                                                             sendMail = false
                                                             uiFeedback.errorMessage = "Incorrect OTP entered. Please try again."
                                              // Finish flow when user exceeds maximum number of flows allowed
-                                             it_esmja = {success:false, error: "You have exceeded the number of attempts allowed"}
-                                             Finish it_esmja
+                                             it_tsiiw = {success:false, error: "You have exceeded the number of attempts allowed"}
+                                             Finish it_tsiiw
                                         Otherwise
                                              // Password and Confirm password doesn't match
                                              Log "@trace Password and Confirm password doesn't match"
@@ -164,5 +165,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_usmmd = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_usmmd
+it_vdzsg = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_vdzsg
