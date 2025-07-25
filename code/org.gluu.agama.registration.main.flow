@@ -103,7 +103,7 @@ maxJourney = Repeat 6 times max
                                                        When uiInput.resend is "yes"
                                                             // Variable assignment when user clicked on "resend code" button
                                                             sendMail = true
-                                                            uiInput.resent = true
+                                                            uiInput.resend = true
                                                        // When passcode entered by user matches
                                                        When uiInput.passcode is otpCode
                                                             // E-mail verification passed, initiating user provisioning flow
@@ -128,8 +128,8 @@ maxJourney = Repeat 6 times max
                                                             uiInput.matches = false
                                                             sendMail = false
                                              // Finish flow when user exceeds maximum number of flows allowed
-                                             it_tjfdz = {success:false, error: "You have exceeded the number of attempts allowed"}
-                                             Finish it_tjfdz
+                                             it_hccif = {success:false, error: "You have exceeded the number of attempts allowed"}
+                                             Finish it_hccif
                                         Otherwise
                                              // Password and Confirm password doesn't match
                                              Log "@trace Password and Confirm password doesn't match"
@@ -163,5 +163,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_pxgat = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_pxgat
+it_nelvg = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_nelvg
