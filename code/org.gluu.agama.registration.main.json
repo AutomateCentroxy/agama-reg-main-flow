@@ -2889,7 +2889,7 @@
 				"width": 168,
 				"height": 120
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2929,6 +2929,44 @@
 				"height": 122
 			},
 			"selected": false
+		},
+		{
+			"id": "assignmentNode-24b92010-fea7-445d-b5b8-353adf4d4a3e",
+			"type": "assignmentNode",
+			"position": {
+				"x": 7304.270774780837,
+				"y": 3294.5075629160356
+			},
+			"data": {
+				"id": "assignmentNode-24b92010-fea7-445d-b5b8-353adf4d4a3e",
+				"type": "assignmentNode",
+				"position": {
+					"x": 7304.270774780837,
+					"y": 3294.5075629160356
+				},
+				"previousNodeId": "logNode-62a2e340-7b22-46f9-b95b-8332508a5fe0",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Error occurs while sending new code to you. Please contact site administrator.\"",
+							"assignedVariableName": "uiFeedback.infoMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "UI Feedback",
+					"hasComment": true,
+					"comment": "Provide feedback about the otp resend error to user."
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -4318,6 +4356,25 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_logNode-2e7bd336-20ed-481f-b15a-bc1c79a856ba"
+		},
+		{
+			"id": "logNode-62a2e340-7b22-46f9-b95b-8332508a5fe0-assignmentNode-24b92010-fea7-445d-b5b8-353adf4d4a3e",
+			"type": "default",
+			"source": "logNode-62a2e340-7b22-46f9-b95b-8332508a5fe0",
+			"target": "assignmentNode-24b92010-fea7-445d-b5b8-353adf4d4a3e",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-62a2e340-7b22-46f9-b95b-8332508a5fe0"
 		}
 	],
 	"viewport": {
