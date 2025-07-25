@@ -2956,8 +2956,8 @@
 			"id": "assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
 			"type": "assignmentNode",
 			"position": {
-				"x": 6090.528434230683,
-				"y": 1308.8712253723713
+				"x": 6415.431013616168,
+				"y": 1095.355826664323
 			},
 			"data": {
 				"id": "assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
@@ -2966,8 +2966,7 @@
 					"x": 6104.528434230683,
 					"y": 1356.8712253723713
 				},
-				"previousNodeId": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca",
-				"branching": "continue",
+				"previousNodeId": "logNode-2bc04c00-0070-4a3f-a654-2223139c1f42",
 				"agamaData": {
 					"assignments": [
 						{
@@ -3062,6 +3061,40 @@
 					"returnVariable": "obj.error",
 					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": false
+		},
+		{
+			"id": "logNode-2bc04c00-0070-4a3f-a654-2223139c1f42",
+			"type": "logNode",
+			"position": {
+				"x": 6104.528434230683,
+				"y": 1106.8712253723713
+			},
+			"data": {
+				"id": "logNode-2bc04c00-0070-4a3f-a654-2223139c1f42",
+				"type": "logNode",
+				"position": {
+					"x": 6104.528434230683,
+					"y": 1106.8712253723713
+				},
+				"previousNodeId": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca",
+				"branching": "otherwise",
+				"agamaData": {
+					"logMessage": "Invalid email OTP entered",
+					"logLevel": "error",
+					"nodeIcon": "octicon:log-16",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "Invalid email OTP entered",
+					"hasComment": true,
+					"comment": "Invalid email OTP entered"
 				}
 			},
 			"measured": {
@@ -4439,25 +4472,6 @@
 			"sourceHandle": "source_whenNode-e6fb5f0d-bea1-4be2-a66c-fd5c90b3bda9_continue"
 		},
 		{
-			"id": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca-assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
-			"type": "default",
-			"source": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca",
-			"target": "assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"label": "continue",
-			"labelBgStyle": {
-				"fill": "#009688",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"labelShowBg": true,
-			"sourceHandle": "source_whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca_continue"
-		},
-		{
 			"source": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca",
 			"sourceHandle": "source_whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca_success",
 			"target": "logNode-ad6adc8b-8acb-4649-be84-fca1c3d8175d",
@@ -4512,11 +4526,48 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-1b6e8bed-6690-4a9f-85ca-ba2a11420c47"
+		},
+		{
+			"id": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca-logNode-2bc04c00-0070-4a3f-a654-2223139c1f42",
+			"type": "default",
+			"source": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca",
+			"target": "logNode-2bc04c00-0070-4a3f-a654-2223139c1f42",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "otherwise",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca_otherwise"
+		},
+		{
+			"source": "logNode-2bc04c00-0070-4a3f-a654-2223139c1f42",
+			"sourceHandle": "source_logNode-2bc04c00-0070-4a3f-a654-2223139c1f42",
+			"target": "assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
+			"targetHandle": "target_assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"id": "xy-edge__logNode-2bc04c00-0070-4a3f-a654-2223139c1f42source_logNode-2bc04c00-0070-4a3f-a654-2223139c1f42-assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54target_assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54"
 		}
 	],
 	"viewport": {
-		"x": -3673.87201745282,
-		"y": -878.9850245330713,
-		"zoom": 1.0570180405613803
+		"x": -6556.990032294022,
+		"y": -1110.851097093869,
+		"zoom": 1.161508731925722
 	}
 }
