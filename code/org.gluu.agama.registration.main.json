@@ -2854,7 +2854,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2874,23 +2874,61 @@
 				"previousNodeId": "whenNode-17694d92-9c7f-419e-bdd4-be3c7a1d6fd1",
 				"branching": "success",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Fail to resend new code to user. \" resendEmailHasSucceed",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Log error code",
 					"hasComment": true,
 					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 168,
+				"height": 120
+			},
+			"selected": true,
+			"dragging": false
+		},
+		{
+			"id": "assignmentNode-b233e084-97cd-4c22-bb7b-842c8c63c18b",
+			"type": "assignmentNode",
+			"position": {
+				"x": 7297.648371253758,
+				"y": 3037.7441041125
+			},
+			"data": {
+				"id": "assignmentNode-b233e084-97cd-4c22-bb7b-842c8c63c18b",
+				"type": "assignmentNode",
+				"position": {
+					"x": 7297.648371253758,
+					"y": 3037.7441041125
+				},
+				"previousNodeId": "logNode-2e7bd336-20ed-481f-b15a-bc1c79a856ba",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"A new OTP code has been send to you on your mobile phone.\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "UI Feedback",
+					"hasComment": true,
+					"comment": "Provide feedback about the error message to user."
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
-			"dragging": false
+			"selected": false
 		}
 	],
 	"edges": [
@@ -4261,6 +4299,25 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-17694d92-9c7f-419e-bdd4-be3c7a1d6fd1_success"
+		},
+		{
+			"id": "logNode-2e7bd336-20ed-481f-b15a-bc1c79a856ba-assignmentNode-b233e084-97cd-4c22-bb7b-842c8c63c18b",
+			"type": "default",
+			"source": "logNode-2e7bd336-20ed-481f-b15a-bc1c79a856ba",
+			"target": "assignmentNode-b233e084-97cd-4c22-bb7b-842c8c63c18b",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-2e7bd336-20ed-481f-b15a-bc1c79a856ba"
 		}
 	],
 	"viewport": {
