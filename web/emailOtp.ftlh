@@ -36,18 +36,18 @@
 			</span>
 		  </div>
 		</div>
-		[#if !matches]
-		<div id="ixi4i" align="center" data-i18n="otp.incorrect_otp_entered" class="fs-6 text-red-600 mb-4">
+		[#if !uiFeedback.matches]
+		<div id="ixi4i" align="center" data-i18n="otp.incorrect_otp_entered" class="fs-6 text-red-600 mb-4">Incorrect OTP entered
 		</div>
 		[/#if]
 		<form method="post" enctype="application/x-www-form-urlencoded" class="my-8">
 		  <div class="relative mb-2">
-			<label for="code" data-i18n="otp.enter_otp" class="label mt-2 ml-1 leading-tighter text-gray-600 text-base cursor-text">Label</label>
+			<label for="code" data-i18n="otp.enter_otp" class="label mt-2 ml-1 leading-tighter text-gray-600 text-base cursor-text">Enter OTP</label>
 			<input type="text" name="passcode" id="passcode" pattern="[0-9]+" placeholder="000000" autocomplete="off" required="" autofocus="" class="bg-gray-50 w-full rounded px-3 border border-gray-300 pt-2 pb-2 focus:border-green-700">
 		  </div>
 		  <div class="space-y-9">
 			<div class="text-sm flex justify-between items-center">
-			  <button type="submit" value="Continue" data-i18n="otp.continue" class="py-2 px-6 rounded text-white btn bg-green-500 hover:bg-green-600 button-gradient">Continue</button>
+			  <button type="submit" value="Continue" data-i18n="otp.continue" class="py-2 px-6 rounded text-white btn bg-green-500 hover:bg-green-600 button-gradient">Submit</button>
 			</div>
 		  </div>
 		</form>
