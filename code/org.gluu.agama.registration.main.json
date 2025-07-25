@@ -1996,7 +1996,7 @@
 			"id": "callNode-a5644573-0c3c-4c0e-bbfa-5edf559cf724",
 			"type": "callNode",
 			"position": {
-				"x": 4139.649354409519,
+				"x": 4141.371252786197,
 				"y": 1428.2809551961755
 			},
 			"data": {
@@ -2237,7 +2237,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -3064,7 +3064,46 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "assignmentNode-b4168628-acda-48cd-8b01-3ab6757a4bce",
+			"type": "assignmentNode",
+			"position": {
+				"x": 6665.431013616168,
+				"y": 1095.355826664323
+			},
+			"data": {
+				"id": "assignmentNode-b4168628-acda-48cd-8b01-3ab6757a4bce",
+				"type": "assignmentNode",
+				"position": {
+					"x": 6665.431013616168,
+					"y": 1095.355826664323
+				},
+				"previousNodeId": "assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "\"Incorrect OTP entered. Please try again.\"",
+							"assignedVariableName": "uiFeedback.errorMessage"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -4506,11 +4545,30 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__repeatNode-6372ab6a-c9b1-4a51-b846-87ae266348dbsource_repeatNode-6372ab6a-c9b1-4a51-b846-87ae266348db_continue-finishNode-544ed7db-8704-43c5-aaf3-fe370649880ctarget_finishNode-544ed7db-8704-43c5-aaf3-fe370649880c"
+		},
+		{
+			"id": "assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54-assignmentNode-b4168628-acda-48cd-8b01-3ab6757a4bce",
+			"type": "default",
+			"source": "assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
+			"target": "assignmentNode-b4168628-acda-48cd-8b01-3ab6757a4bce",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54"
 		}
 	],
 	"viewport": {
-		"x": -3265.6527221430533,
-		"y": -714.9638034555546,
-		"zoom": 0.7412335049014176
+		"x": -2276.750801531879,
+		"y": -381.0615332019223,
+		"zoom": 0.5
 	}
 }
