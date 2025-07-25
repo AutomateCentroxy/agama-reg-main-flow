@@ -102,6 +102,9 @@ maxJourney = Repeat 6 times max
                                                        //  Add log entry with collected code in log file.
                                                        Log "@info Password provided by the user " 
                                                        When emailOtpCreds.passcode is otpCode
+                                                            Log "@info xxxxxxxxxxxxxxxxxx"
+                                                       Otherwise
+                                                            Log "@info xxxxxxxxxxxxxxxxxxxx"
                                              // Email OTP verification loop completed
                                              Log "@info Email OTP verification loop completed"
                                         Otherwise
@@ -137,5 +140,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_najqz = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_najqz
+it_orrkz = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_orrkz
