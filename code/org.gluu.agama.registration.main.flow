@@ -121,9 +121,12 @@ maxJourney = Repeat 6 times max
                                                                  Finish userName
                                                             // Registration failed log
                                                             Log "@info User registration failed. Error : %" E
-                                                       // Variable assigned when OTP entered by user does not matches
-                                                       uiInput.matches = false
-                                                       sendMail = false
+                                                       Otherwise
+                                                            // Invalid email OTP entered
+                                                            Log "@error " Invalid email OTP entered
+                                                            // Variable assigned when OTP entered by user does not matches
+                                                            uiInput.matches = false
+                                                            sendMail = false
                                              // Variable assignment when user exceeds the number of attempts allowed
                                              obj.error = "You have exceeded the number of attempts allowed"
                                              // Finish flow when user exceeds maximum number of flows allowed
@@ -161,5 +164,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_dgnpf = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_dgnpf
+it_yvzdj = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_yvzdj
