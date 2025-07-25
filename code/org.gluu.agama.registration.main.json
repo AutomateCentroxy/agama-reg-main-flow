@@ -1664,7 +1664,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2379,6 +2379,46 @@
 			},
 			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "callNode-856d766d-1d5a-40ec-a5b5-c0e95d57ba23",
+			"type": "callNode",
+			"position": {
+				"x": 4650.170279388967,
+				"y": 2604.620345182709
+			},
+			"data": {
+				"id": "callNode-856d766d-1d5a-40ec-a5b5-c0e95d57ba23",
+				"type": "callNode",
+				"position": {
+					"x": 4650.170279388967,
+					"y": 2604.620345182709
+				},
+				"previousNodeId": "logNode-03a587ef-b76f-4d16-a191-ab20a6be711d",
+				"agamaData": {
+					"javaClassName": "",
+					"javaMethodName": "sendEmail",
+					"javaVariableName": "userRegistrationService",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"arguments": [
+						"email"
+					],
+					"nodeIcon": "material-symbols:code",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "sent Email otp",
+					"hasComment": true,
+					"comment": "sent Email otp",
+					"asssignedVariableName": "otpCode"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -3483,11 +3523,30 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__logNode-3ef73ef8-4026-43c3-a96f-4547ecddb951source_logNode-3ef73ef8-4026-43c3-a96f-4547ecddb951-callNode-0dee2ce9-5659-4a3a-ade1-d1d517a891fftarget_callNode-0dee2ce9-5659-4a3a-ade1-d1d517a891ff"
+		},
+		{
+			"id": "logNode-03a587ef-b76f-4d16-a191-ab20a6be711d-callNode-856d766d-1d5a-40ec-a5b5-c0e95d57ba23",
+			"type": "default",
+			"source": "logNode-03a587ef-b76f-4d16-a191-ab20a6be711d",
+			"target": "callNode-856d766d-1d5a-40ec-a5b5-c0e95d57ba23",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-03a587ef-b76f-4d16-a191-ab20a6be711d"
 		}
 	],
 	"viewport": {
-		"x": 284.84772674629403,
-		"y": 175.7053772645072,
-		"zoom": 0.5
+		"x": -5432.169417115791,
+		"y": -2653.671797930375,
+		"zoom": 1.2277356839150602
 	}
 }
