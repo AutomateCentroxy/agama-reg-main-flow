@@ -95,10 +95,10 @@ maxJourney = Repeat 6 times max
                                                        // Variable assignment after successful email delivery
                                                        emailObj.email = email
                                                        emailObj.matches = uiInput.matches
-                                                       emailObj.resend = uiInput.resend
+                                                       emailObj.resent = uiInput.resent
                                                        // Redirect to page asking for OTP received using email
                                                        uiInput = RRF "emailOtp.ftlh" emailObj
-                                                       uiInput.resend = false
+                                                       uiInput.resent = false
                                                        // If user clicked on "resend code" button
                                                        When uiInput.resend is "yes"
                                                             // Variable assignment when user clicked on "resend code" button
@@ -128,8 +128,8 @@ maxJourney = Repeat 6 times max
                                                             uiInput.matches = false
                                                             sendMail = false
                                              // Finish flow when user exceeds maximum number of flows allowed
-                                             it_vzzyp = {success:false, error: "You have exceeded the number of attempts allowed"}
-                                             Finish it_vzzyp
+                                             it_fvoou = {success:false, error: "You have exceeded the number of attempts allowed"}
+                                             Finish it_fvoou
                                         Otherwise
                                              // Password and Confirm password doesn't match
                                              Log "@trace Password and Confirm password doesn't match"
@@ -163,5 +163,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_aophw = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_aophw
+it_mlgdv = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_mlgdv
