@@ -3063,13 +3063,13 @@
 				"previousNodeId": "whenNode-c5fc85fd-5837-4447-987e-346d0bbd1365",
 				"branching": "otherwise",
 				"agamaData": {
-					"logMessage": "\"xxxxxxxxxxxxxxxxxxxx\"",
+					"logMessage": "\"Invalid OTP, Please Try Again!\"",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Invalid OTP",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -3078,7 +3078,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "assignmentNode-4355fb5a-18cf-4e0d-b309-348b9513bee0",
@@ -3116,7 +3116,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
