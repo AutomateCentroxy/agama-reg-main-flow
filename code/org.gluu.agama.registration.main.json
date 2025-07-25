@@ -1358,7 +1358,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2914,7 +2914,7 @@
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Send-Email-trigger",
 					"hasComment": true,
 					"comment": ""
 				}
@@ -2923,7 +2923,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": true
 		}
 	],
 	"edges": [
