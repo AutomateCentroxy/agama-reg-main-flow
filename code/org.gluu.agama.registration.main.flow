@@ -123,7 +123,7 @@ maxJourney = Repeat 6 times max
                                                             Log "@info User registration failed. Error : %" E
                                                        Otherwise
                                                             // Invalid email OTP entered
-                                                            Log "@error " Invalid email OTP entered
+                                                            Log "@error Invalid email OTP entered"
                                                             // Variable assigned when OTP entered by user does not matches
                                                             uiInput.matches = false
                                                             sendMail = false
@@ -164,5 +164,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_yvzdj = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_yvzdj
+it_ikzki = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_ikzki
