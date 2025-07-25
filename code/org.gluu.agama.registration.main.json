@@ -2541,21 +2541,22 @@
 				"previousNodeId": "repeatNode-81eab272-9bad-4d8d-9ad5-623ea7d6b550",
 				"branching": "continue",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Email OTP verification loop completed\"",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "Email OTP verification loop completed",
 					"hasComment": true,
-					"comment": ""
+					"comment": "Email OTP verification loop completed"
 				}
 			},
 			"measured": {
 				"width": 170,
 				"height": 122
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-182b6428-c5c9-4d00-9cd7-d2a60fa5eb4d",
@@ -2588,7 +2589,8 @@
 			"measured": {
 				"width": 170,
 				"height": 122
-			}
+			},
+			"selected": false
 		}
 	],
 	"edges": [
