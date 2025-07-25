@@ -186,6 +186,7 @@ public class JansUserRegistration extends UserRegistration {
         String uid = combined.get("uid");
         String mail = combined.get("mail");
         String password = combined.get("userPassword");
+        String phoneNumber = combined.get("phoneNumber");
 
         if (StringHelper.isEmpty(uid) || StringHelper.isEmpty(password)) {
             throw new IllegalArgumentException("UID and password are required.");
