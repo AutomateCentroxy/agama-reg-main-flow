@@ -3345,7 +3345,7 @@
 					"displayName": "Regiseter a new user",
 					"hasComment": true,
 					"comment": "",
-					"asssignedVariableName": "inum"
+					"asssignedVariableName": "inumm"
 				}
 			},
 			"measured": {
