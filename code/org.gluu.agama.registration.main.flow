@@ -107,7 +107,6 @@ maxJourney = Repeat 6 times max
                                                             uiInput.resent = true
                                                        // When passcode entered by user matches
                                                        When uiInput.passcode is otpCode
-                                                            // E-mail verification passed, initiating user provisioning flow
                                                             Log "@info E-mail verification passed, initiating user provisioning flow"
                                                             inum | E = Call userRegistrationService addNewUser userInput passwordInput
                                                             // If user registration success
@@ -130,8 +129,8 @@ maxJourney = Repeat 6 times max
                                                             sendMail = false
                                                             uiFeedback.errorMessage = "Incorrect OTP entered. Please try again."
                                              // Finish flow when user exceeds maximum number of flows allowed
-                                             it_tsiiw = {success:false, error: "You have exceeded the number of attempts allowed"}
-                                             Finish it_tsiiw
+                                             it_qopvj = {success:false, error: "You have exceeded the number of attempts allowed"}
+                                             Finish it_qopvj
                                         Otherwise
                                              // Password and Confirm password doesn't match
                                              Log "@trace Password and Confirm password doesn't match"
@@ -165,5 +164,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_vdzsg = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_vdzsg
+it_lqqgj = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_lqqgj
