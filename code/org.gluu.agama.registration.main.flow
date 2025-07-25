@@ -157,5 +157,5 @@ Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_fzfmv = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_fzfmv
+it_ahmwh = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_ahmwh
