@@ -2899,15 +2899,15 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
 			"id": "assignmentNode-c79fa0f5-a94b-4f50-b509-edab2b4ddd9e",
 			"type": "assignmentNode",
 			"position": {
-				"x": 5809.528434230683,
-				"y": 1556.8712253723713
+				"x": 5727.528434230683,
+				"y": 1567.8712253723713
 			},
 			"data": {
 				"id": "assignmentNode-c79fa0f5-a94b-4f50-b509-edab2b4ddd9e",
@@ -2944,7 +2944,52 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca",
+			"type": "whenNode",
+			"position": {
+				"x": 5854.528434230683,
+				"y": 1356.8712253723713
+			},
+			"data": {
+				"id": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca",
+				"type": "whenNode",
+				"position": {
+					"x": 5809.528434230683,
+					"y": 1356.8712253723713
+				},
+				"previousNodeId": "whenNode-e6fb5f0d-bea1-4be2-a66c-fd5c90b3bda9",
+				"branching": "continue",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "uiInput.passcode",
+							"operator": "is",
+							"dataValue": "otpCode",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "When passcode entered by user matches"
+				}
+			},
+			"measured": {
+				"width": 109,
+				"height": 58
+			},
+			"selected": true,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -4312,11 +4357,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-e6fb5f0d-bea1-4be2-a66c-fd5c90b3bda9_success"
+		},
+		{
+			"id": "whenNode-e6fb5f0d-bea1-4be2-a66c-fd5c90b3bda9-whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca",
+			"type": "default",
+			"source": "whenNode-e6fb5f0d-bea1-4be2-a66c-fd5c90b3bda9",
+			"target": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-e6fb5f0d-bea1-4be2-a66c-fd5c90b3bda9_continue"
 		}
 	],
 	"viewport": {
-		"x": -5064.533673990744,
-		"y": -1055.6938706231506,
+		"x": -5311.533673990744,
+		"y": -1179.6938706231506,
 		"zoom": 1
 	}
 }
