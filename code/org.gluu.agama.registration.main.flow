@@ -98,7 +98,7 @@ maxJourney = Repeat 6 times max
                                                        emailObj.resend = uiInput.resend
                                                        // Redirect to page asking for OTP received using email
                                                        uiInput = RRF "emailOtp.ftlh" emailObj
-                                                       uiInput.resent = false
+                                                       uiInput.resend = false
                                                        // If user clicked on "resend code" button
                                                        When uiInput.resend is "yes"
                                                             // Variable assignment when user clicked on "resend code" button
@@ -128,8 +128,8 @@ maxJourney = Repeat 6 times max
                                                             uiInput.matches = false
                                                             sendMail = false
                                              // Finish flow when user exceeds maximum number of flows allowed
-                                             it_uacre = {success:false, error: "You have exceeded the number of attempts allowed"}
-                                             Finish it_uacre
+                                             it_gmbws = {success:false, error: "You have exceeded the number of attempts allowed"}
+                                             Finish it_gmbws
                                         Otherwise
                                              // Password and Confirm password doesn't match
                                              Log "@trace Password and Confirm password doesn't match"
@@ -163,5 +163,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_tkbnx = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_tkbnx
+it_kfdpr = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_kfdpr
