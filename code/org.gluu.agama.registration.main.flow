@@ -106,7 +106,7 @@ maxJourney = Repeat 6 times max
                                                        When emailOtpCreds.passcode is otpCode
                                                             Log "@info Email Otp Verified"
                                                             EmailOtpValidationResult = true
-                                                            Log "@info E-mail verification passed, initiating user provisioning flow"
+                                                            Log "@info E-mail verification passed, initiating user provisioning flow " userInput
                                                             inum | E = Call userRegistrationService addNewUser userInput passwordInput
                                                             // If user registration success
                                                             When inum is not null
@@ -158,5 +158,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_uzhho = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_uzhho
+it_ywrex = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_ywrex
