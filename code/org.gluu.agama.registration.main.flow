@@ -105,6 +105,11 @@ maxJourney = Repeat 6 times max
                                                             inumm | E = Call userRegistrationService addNewUser userInput passwordInput
                                                             // If user registration success
                                                             When inumm is null
+                                                                 Log "@ " __________
+                                                                 RRF "__________" 
+                                                                 Log "@ " __________
+                                                                 Finish __________
+                                                            Log "@ " __________
                                                        Otherwise
                                                             uiFeedback.infoMessage = "Invalid OTP, Please Try Again!"
                                                   Otherwise
@@ -165,5 +170,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_cjitt = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_cjitt
+it_khqua = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_khqua
