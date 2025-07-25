@@ -2988,8 +2988,52 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
+		},
+		{
+			"id": "assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
+			"type": "assignmentNode",
+			"position": {
+				"x": 6104.528434230683,
+				"y": 1356.8712253723713
+			},
+			"data": {
+				"id": "assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
+				"type": "assignmentNode",
+				"position": {
+					"x": 6104.528434230683,
+					"y": 1356.8712253723713
+				},
+				"previousNodeId": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca",
+				"branching": "continue",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "false",
+							"assignedVariableName": "uiInput.matches"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "false",
+							"assignedVariableName": "sendMail"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Variable assigned when OTP entered by user does not matches"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
+			},
+			"selected": true
 		}
 	],
 	"edges": [
@@ -4376,11 +4420,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_whenNode-e6fb5f0d-bea1-4be2-a66c-fd5c90b3bda9_continue"
+		},
+		{
+			"id": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca-assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
+			"type": "default",
+			"source": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca",
+			"target": "assignmentNode-122591cd-d96f-4e67-afad-0b0bc970dd54",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "continue",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca_continue"
 		}
 	],
 	"viewport": {
-		"x": -5311.533673990744,
-		"y": -1179.6938706231506,
+		"x": -5339.533673990744,
+		"y": -1114.6938706231506,
 		"zoom": 1
 	}
 }
