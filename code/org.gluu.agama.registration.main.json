@@ -3154,7 +3154,50 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
+		},
+		{
+			"id": "whenNode-f3574a9a-ca98-4301-aafe-7c7bee8ec506",
+			"type": "whenNode",
+			"position": {
+				"x": 7548.747225471335,
+				"y": 3076.2040017276904
+			},
+			"data": {
+				"id": "whenNode-f3574a9a-ca98-4301-aafe-7c7bee8ec506",
+				"type": "whenNode",
+				"position": {
+					"x": 7547.648371253758,
+					"y": 3037.7441041125
+				},
+				"previousNodeId": "assignmentNode-b233e084-97cd-4c22-bb7b-842c8c63c18b",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "emailOtpCreds.passcode",
+							"operator": "is",
+							"dataValue": "resendEmailHasSucceed",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "resendEmailHasSucceed"
+				}
+			},
+			"measured": {
+				"width": 109,
+				"height": 58
+			},
+			"selected": true,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -4676,11 +4719,30 @@
 				"fillOpacity": 0.7
 			},
 			"id": "xy-edge__assignmentNode-da75cecb-6a66-4585-b1eb-28ac544cfc56source_assignmentNode-da75cecb-6a66-4585-b1eb-28ac544cfc56-logNode-3ef73ef8-4026-43c3-a96f-4547ecddb951target_logNode-3ef73ef8-4026-43c3-a96f-4547ecddb951"
+		},
+		{
+			"id": "assignmentNode-b233e084-97cd-4c22-bb7b-842c8c63c18b-whenNode-f3574a9a-ca98-4301-aafe-7c7bee8ec506",
+			"type": "default",
+			"source": "assignmentNode-b233e084-97cd-4c22-bb7b-842c8c63c18b",
+			"target": "whenNode-f3574a9a-ca98-4301-aafe-7c7bee8ec506",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_assignmentNode-b233e084-97cd-4c22-bb7b-842c8c63c18b"
 		}
 	],
 	"viewport": {
-		"x": -6763.9351569407745,
-		"y": -2604.3955664410314,
-		"zoom": 1.0570180405613803
+		"x": -6123.805622619495,
+		"y": -2350.589941988489,
+		"zoom": 0.9100388240808991
 	}
 }
