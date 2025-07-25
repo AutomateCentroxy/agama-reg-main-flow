@@ -92,6 +92,8 @@ maxJourney = Repeat 6 times max
                                                        resendEmailHasSucceed = Call userRegistrationService sendEmail email
                                                        When resendEmailHasSucceed is null
                                                             Log "@info Fail to resend new code to user. " resendEmailHasSucceed
+                                                            // Provide feedback about the otp resend error to user.
+                                                            uiFeedback.infoMessage = "Error occurs while sending new code to you. Please contact site administrator."
                                                        // Log code resend
                                                        Log "@info New OTP code send successfully!" resendEmailHasSucceed
                                                        // Provide feedback about the error message to user.
@@ -133,5 +135,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_rwhyh = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_rwhyh
+it_wsulg = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_wsulg
