@@ -127,9 +127,10 @@ maxJourney = Repeat 6 times max
                                                             // Variable assigned when OTP entered by user does not matches
                                                             uiInput.matches = false
                                                             sendMail = false
+                                                            uiFeedback.errorMessage = "Incorrect OTP entered. Please try again."
                                              // Finish flow when user exceeds maximum number of flows allowed
-                                             it_fvoou = {success:false, error: "You have exceeded the number of attempts allowed"}
-                                             Finish it_fvoou
+                                             it_esmja = {success:false, error: "You have exceeded the number of attempts allowed"}
+                                             Finish it_esmja
                                         Otherwise
                                              // Password and Confirm password doesn't match
                                              Log "@trace Password and Confirm password doesn't match"
@@ -163,5 +164,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_mlgdv = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_mlgdv
+it_usmmd = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_usmmd
