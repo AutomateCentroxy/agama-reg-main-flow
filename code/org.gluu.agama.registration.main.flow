@@ -99,7 +99,8 @@ maxJourney = Repeat 6 times max
                                                        // Provide feedback about the error message to user.
                                                        uiFeedback.errorMessage = "A new OTP code has been send to you on your mobile phone."
                                                   Otherwise
-                                                       Log "@ " __________
+                                                       //  Add log entry with collected code in log file.
+                                                       Log "@info Information provided by the user is : " emailOtpCreds.code
                                              // Email OTP verification loop completed
                                              Log "@info Email OTP verification loop completed"
                                         Otherwise
@@ -135,5 +136,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_wsulg = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_wsulg
+it_grlsu = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_grlsu
