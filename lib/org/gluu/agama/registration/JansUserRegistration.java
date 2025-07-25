@@ -44,8 +44,8 @@ public class JansUserRegistration extends UserRegistration {
     private static final String COUNTRY = "residenceCountry";
     private static final String REFERRAL = "referralCode";
     private static final String EXT_ATTR = "jansExtUid";
+    private static final String PHONE = "telephoneNumber";
     private static final String MOBILE = "mobile";
-    private static final String PHONE_UI = "phoneNumber";
     private static final int OTP_LENGTH = 6;
     public static final int OTP_CODE_LENGTH = 6;
     private static final String SUBJECT_TEMPLATE = "Here's your verification code: %s";
@@ -197,7 +197,9 @@ public class JansUserRegistration extends UserRegistration {
         user.setAttribute("displayName", uid);
         user.setAttribute("givenName", uid);
         user.setAttribute("sn", uid);
-        user.setAttribute("userPassword", password); // let Jans hash it
+        user.setAttribute("userPassword", password);
+        user.setAttribute(PHONE, phoneNumber, false);
+        user.setAttribute(MOBILE, phoneNumber, false);
 
         if (StringHelper.isNotEmpty(combined.get("residenceCountry"))) {
             user.setAttribute("residenceCountry", combined.get("residenceCountry"));
@@ -206,11 +208,6 @@ public class JansUserRegistration extends UserRegistration {
         if (StringHelper.isNotEmpty(combined.get("referralCode"))) {
             user.setAttribute("referralCode", combined.get("referralCode"));
         }
-
-        if (StringHelper.isNotEmpty(combined.get("phoneNumber"))) {
-            user.setAttribute("mobile", combined.get("phoneNumber"));
-        }
-
         UserService userService = CdiUtil.bean(UserService.class);
         user = userService.addUser(user, true); // status: active
 
