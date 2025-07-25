@@ -54,7 +54,7 @@
 		<form method="post" enctype="application/x-www-form-urlencoded" class="mb-2">
 		  <div class="d-flex justify-content-center">
 			<span data-i18n="otp.email_not_received"></span>
-			<button type="submit" id="resend-2" name="resend" value="" data-i18n="otp.resent_code" class="text-sm font-bold text-green-500">resend code
+			<button type="submit" id="resend-2" name="resend" value="yes" data-i18n="otp.resent_code" class="text-sm font-bold text-green-500">resend code
 			</button>
 		  </div>
 		</form>
