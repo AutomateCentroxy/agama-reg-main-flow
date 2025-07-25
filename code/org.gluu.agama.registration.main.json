@@ -115,7 +115,7 @@
 				"agamaData": {
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
 					"maxIteration": "6",
-					"maxIterationVariableName": "",
+					"maxIterationVariableName": "maxJourney",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
@@ -128,7 +128,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -1766,7 +1766,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -4404,8 +4404,8 @@
 		}
 	],
 	"viewport": {
-		"x": 457.44191949145306,
-		"y": 38.38693134566395,
-		"zoom": 0.6381643844144765
+		"x": 1257.2073131263478,
+		"y": 190.35540716932826,
+		"zoom": 0.5
 	}
 }
