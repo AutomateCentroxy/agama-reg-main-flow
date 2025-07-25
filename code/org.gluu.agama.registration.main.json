@@ -2159,8 +2159,8 @@
 			"id": "finishNode-93200156-5a2d-43e8-9d39-2d909cb3ec2d",
 			"type": "finishNode",
 			"position": {
-				"x": 5002.665567154813,
-				"y": 1714.1292935750039
+				"x": 5014.525303233237,
+				"y": 1648.9007451436792
 			},
 			"data": {
 				"id": "finishNode-93200156-5a2d-43e8-9d39-2d909cb3ec2d",
@@ -2864,7 +2864,7 @@
 			"type": "whenNode",
 			"position": {
 				"x": 5559.528434230683,
-				"y": 1312.3972150782863
+				"y": 1356.8712253723713
 			},
 			"data": {
 				"id": "whenNode-e6fb5f0d-bea1-4be2-a66c-fd5c90b3bda9",
@@ -2898,6 +2898,51 @@
 			"measured": {
 				"width": 109,
 				"height": 58
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "assignmentNode-c79fa0f5-a94b-4f50-b509-edab2b4ddd9e",
+			"type": "assignmentNode",
+			"position": {
+				"x": 5809.528434230683,
+				"y": 1556.8712253723713
+			},
+			"data": {
+				"id": "assignmentNode-c79fa0f5-a94b-4f50-b509-edab2b4ddd9e",
+				"type": "assignmentNode",
+				"position": {
+					"x": 5809.528434230683,
+					"y": 1556.8712253723713
+				},
+				"previousNodeId": "whenNode-e6fb5f0d-bea1-4be2-a66c-fd5c90b3bda9",
+				"branching": "success",
+				"agamaData": {
+					"assignments": [
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "sendMail"
+						},
+						{
+							"variableTypeCheck": true,
+							"assignmentExpression": "true",
+							"assignedVariableName": "uiInput.resent"
+						}
+					],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Variable assignment when user clicked on \"resend code\" button"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 122
 			},
 			"selected": true
 		}
@@ -4248,11 +4293,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_assignmentNode-88711a76-9e02-4bcc-bc41-36153323c406"
+		},
+		{
+			"id": "whenNode-e6fb5f0d-bea1-4be2-a66c-fd5c90b3bda9-assignmentNode-c79fa0f5-a94b-4f50-b509-edab2b4ddd9e",
+			"type": "default",
+			"source": "whenNode-e6fb5f0d-bea1-4be2-a66c-fd5c90b3bda9",
+			"target": "assignmentNode-c79fa0f5-a94b-4f50-b509-edab2b4ddd9e",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "Condition met",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_whenNode-e6fb5f0d-bea1-4be2-a66c-fd5c90b3bda9_success"
 		}
 	],
 	"viewport": {
-		"x": -3200.005155365161,
-		"y": -610.5886913765697,
+		"x": -3426.005155365161,
+		"y": -657.5886913765698,
 		"zoom": 0.6745512671698494
 	}
 }
