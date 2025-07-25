@@ -93,7 +93,6 @@ Repeat 6 times max
                                                             // Finish flow unsuccessfully
                                                             Finish emailObj
                                                        // Variable assignment after successful email delivery
-                                                       emailVerificationSuccess = false
                                                        emailObj.email = email
                                                        emailObj.matches = uiInput.matches
                                                        emailObj.resent = uiInput.resent
@@ -130,5 +129,5 @@ Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_eqkxt = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_eqkxt
+it_bldeg = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_bldeg
