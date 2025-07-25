@@ -2721,22 +2721,22 @@
 				"previousNodeId": "whenNode-42914ed2-83a0-4bd8-873d-457b5abfbfcc",
 				"branching": "otherwise",
 				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
+					"logMessage": "\"Information provided by the user is : \" emailOtpCreds.code",
+					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
 					"titleColor": "",
 					"descColor": "",
-					"displayName": "",
+					"displayName": "LOG",
 					"hasComment": true,
-					"comment": ""
+					"comment": " Add log entry with collected code in log file."
 				}
 			},
 			"measured": {
-				"width": 170,
-				"height": 122
+				"width": 168,
+				"height": 120
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2966,7 +2966,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true
+			"selected": false
 		}
 	],
 	"edges": [
@@ -4378,8 +4378,8 @@
 		}
 	],
 	"viewport": {
-		"x": -6761.171805521954,
-		"y": -2922.387759169486,
-		"zoom": 1.0570180405613803
+		"x": -5056.626615214177,
+		"y": -2152.6113394922418,
+		"zoom": 0.9100388240808991
 	}
 }
