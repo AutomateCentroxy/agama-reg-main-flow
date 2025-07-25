@@ -106,6 +106,9 @@ Repeat 6 times max
                                                             uiInput.resent = true
                                                        // When passcode entered by user matches
                                                        When uiInput.passcode is otpCode
+                                                       // Variable assigned when OTP entered by user does not matches
+                                                       uiInput.matches = false
+                                                       sendMail = false
                                         Otherwise
                                              // Password and Confirm password doesn't match
                                              Log "@trace Password and Confirm password doesn't match"
@@ -139,5 +142,5 @@ Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_tvwah = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_tvwah
+it_mpfnw = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_mpfnw
