@@ -2220,8 +2220,8 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "uiInput.resend",
-							"assignedVariableName": "emailObj.resend"
+							"assignmentExpression": "uiInput.resent",
+							"assignedVariableName": "emailObj.resent"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -2237,7 +2237,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2802,7 +2802,7 @@
 						{
 							"variableTypeCheck": true,
 							"assignmentExpression": "false",
-							"assignedVariableName": "uiInput.resend"
+							"assignedVariableName": "uiInput.resent"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -2905,7 +2905,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -4509,8 +4509,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3491.6527221430533,
-		"y": -750.9638034555546,
+		"x": -3265.6527221430533,
+		"y": -714.9638034555546,
 		"zoom": 0.7412335049014176
 	}
 }
