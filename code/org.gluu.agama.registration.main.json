@@ -2237,7 +2237,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2802,7 +2802,7 @@
 						{
 							"variableTypeCheck": true,
 							"assignmentExpression": "false",
-							"assignedVariableName": "uiInput.resent"
+							"assignedVariableName": "uiInput.resend"
 						}
 					],
 					"nodeIcon": "material-symbols:equal",
@@ -2818,7 +2818,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": true
 		},
 		{
 			"id": "whenNode-e6fb5f0d-bea1-4be2-a66c-fd5c90b3bda9",
