@@ -2721,7 +2721,7 @@
 				"previousNodeId": "whenNode-42914ed2-83a0-4bd8-873d-457b5abfbfcc",
 				"branching": "otherwise",
 				"agamaData": {
-					"logMessage": "\"Information provided by the user is : \" emailOtpCreds.code",
+					"logMessage": "\"Password provided by the user \" ",
 					"logLevel": "info",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -4378,8 +4378,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5056.626615214177,
-		"y": -2152.6113394922418,
-		"zoom": 0.9100388240808991
+		"x": -5683.257633543729,
+		"y": -2636.7082157615732,
+		"zoom": 1.0570180405613803
 	}
 }
