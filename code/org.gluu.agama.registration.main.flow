@@ -84,6 +84,7 @@ maxJourney = Repeat 6 times max
                                              EmailMax = Repeat 6 times max
                                                   // "Email OTP verification loop Started"
                                                   Log "@info Email OTP verification loop Started"
+                                                  uiFeedback.email = email
                                                   //  Show UI to collect OTP code from user.
                                                   emailOtpCreds = RRF "emailOtp.ftlh" uiFeedback
                                                   When emailOtpCreds.resend is "yes"
@@ -156,5 +157,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_jfawa = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_jfawa
+it_wsnbe = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_wsnbe
