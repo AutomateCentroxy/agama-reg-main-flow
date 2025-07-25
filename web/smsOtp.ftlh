@@ -22,18 +22,6 @@
 				<h1 class="text-2xl font-bold">OTP Verification
 				</h1>
 				<div class="flex flex-col mt-4">
-				  [#if phone??]
-				  <div role="alert" class="p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400">
-					<span class="font-medium"></span>Welcome back!
-					[#if phone??]
-					<span class="font-medium">${infoMessage}</span> 
-					[#else]
-					<span class="font-medium">It looks like there is no phone number associated to your account.</span> 
-					[/#if]
-				  </div>
-				  [/#if]
-				</div>
-				<div class="flex flex-col mt-4">
 				  [#if errorMessage??]
 				  <div role="alert" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400">
 					<span class="font-medium"></span>${errorMessage}
@@ -41,7 +29,6 @@
 				  [/#if]
 				  [#if phone??]
 				  <span>Enter the OTP you received at</span>
-				  <span class="font-bold">${phone}</span>
 				  [/#if]
 				</div>
 				<div id="otp" class="flex flex-row justify-center text-center px-2 mt-5">
