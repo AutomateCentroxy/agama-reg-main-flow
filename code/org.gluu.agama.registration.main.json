@@ -2210,11 +2210,6 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "false",
-							"assignedVariableName": "emailVerificationSuccess"
-						},
-						{
-							"variableTypeCheck": true,
 							"assignmentExpression": "email",
 							"assignedVariableName": "emailObj.email"
 						},
@@ -4360,8 +4355,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3975.0357390265344,
-		"y": -873.1041361781636,
-		"zoom": 0.9100388240808991
+		"x": -2575.0051553651615,
+		"y": -643.5886913765698,
+		"zoom": 0.6745512671698494
 	}
 }
