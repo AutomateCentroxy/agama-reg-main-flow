@@ -91,9 +91,11 @@ maxJourney = Repeat 6 times max
                                                        // Resend Email otp
                                                        resendEmailHasSucceed = Call userRegistrationService sendEmail email
                                                        When resendEmailHasSucceed is null
-                                                            Log "@ " __________
+                                                            Log "@info Fail to resend new code to user. " resendEmailHasSucceed
                                                        // Log code resend
                                                        Log "@info New OTP code send successfully!" resendEmailHasSucceed
+                                                       // Provide feedback about the error message to user.
+                                                       uiFeedback.errorMessage = "A new OTP code has been send to you on your mobile phone."
                                                   Otherwise
                                                        Log "@ " __________
                                              // Email OTP verification loop completed
@@ -131,5 +133,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_bdxxi = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_bdxxi
+it_rwhyh = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_rwhyh
