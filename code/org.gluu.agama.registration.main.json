@@ -2709,7 +2709,7 @@
 			"type": "logNode",
 			"position": {
 				"x": 6340.884135798917,
-				"y": 2622.0263365081173
+				"y": 2619.1881635679406
 			},
 			"data": {
 				"id": "logNode-36efeabd-2a88-4977-8d67-96c29013f17a",
@@ -2736,7 +2736,7 @@
 				"width": 168,
 				"height": 120
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -2967,6 +2967,49 @@
 				"height": 122
 			},
 			"selected": false
+		},
+		{
+			"id": "whenNode-c5fc85fd-5837-4447-987e-346d0bbd1365",
+			"type": "whenNode",
+			"position": {
+				"x": 6560.610291103697,
+				"y": 2569.9931659382096
+			},
+			"data": {
+				"id": "whenNode-c5fc85fd-5837-4447-987e-346d0bbd1365",
+				"type": "whenNode",
+				"position": {
+					"x": 6590.884135798917,
+					"y": 2619.1881635679406
+				},
+				"previousNodeId": "logNode-36efeabd-2a88-4977-8d67-96c29013f17a",
+				"agamaData": {
+					"variableField": "",
+					"valueField": "",
+					"conditionInputField": "",
+					"conditions": [
+						{
+							"variable": "emailOtpCreds.passcode",
+							"operator": "is",
+							"dataValue": "otpCode",
+							"combinator": "none"
+						}
+					],
+					"nodeIcon": "ph:swap",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 109,
+				"height": 58
+			},
+			"selected": true,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -4375,11 +4418,30 @@
 			},
 			"labelShowBg": true,
 			"sourceHandle": "source_logNode-62a2e340-7b22-46f9-b95b-8332508a5fe0"
+		},
+		{
+			"id": "logNode-36efeabd-2a88-4977-8d67-96c29013f17a-whenNode-c5fc85fd-5837-4447-987e-346d0bbd1365",
+			"type": "default",
+			"source": "logNode-36efeabd-2a88-4977-8d67-96c29013f17a",
+			"target": "whenNode-c5fc85fd-5837-4447-987e-346d0bbd1365",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-36efeabd-2a88-4977-8d67-96c29013f17a"
 		}
 	],
 	"viewport": {
-		"x": -5683.257633543729,
-		"y": -2636.7082157615732,
+		"x": -6170.257633543729,
+		"y": -2473.7082157615732,
 		"zoom": 1.0570180405613803
 	}
 }
