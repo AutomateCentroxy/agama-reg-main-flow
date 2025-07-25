@@ -2949,7 +2949,7 @@
 				"width": 109,
 				"height": 58
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		},
 		{
@@ -3086,7 +3086,7 @@
 				"previousNodeId": "whenNode-9d8c8eab-b613-4640-a70a-359c4ced01ca",
 				"branching": "otherwise",
 				"agamaData": {
-					"logMessage": "\"Invalid email OTP entered\" + uiInput.passcode",
+					"logMessage": "\"Invalid email OTP entered\"",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16",
 					"nodeColor": "",
@@ -3101,7 +3101,7 @@
 				"width": 170,
 				"height": 122
 			},
-			"selected": false
+			"selected": true
 		}
 	],
 	"edges": [
@@ -4566,8 +4566,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5594,
-		"y": -951,
-		"zoom": 1
+		"x": -3952.8945752067148,
+		"y": -640.4547271810754,
+		"zoom": 0.7412335049014176
 	}
 }
