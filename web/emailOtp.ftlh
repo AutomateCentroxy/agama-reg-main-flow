@@ -1,8 +1,8 @@
 [#ftl output_format="HTML"]
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>OTP Submission Form
-	</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" type="text/css"></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>OTP Verification
+	</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></head>
 <body>
 
   
@@ -10,62 +10,147 @@
 	
 	
 	
-	
   
   
-	<div id="content" class="md:h-screen bg-white relative flex flex-col justify-center items-center">
-	  <div class="md:border md:border-gray-300 bg-white md:shadow-lg shadow-none rounded p-10">
-		<div class="flex flex-col items-center space-y-3">
-		  <div class="flex">
-			<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png">
+	<div class="otp-container">
+	  <div align="center" class="flex">
+		<img src="https://gluu.org/wp-content/uploads/2020/12/logo.png" alt="Logo" id="inh1m">
+	  </div>
+	  <div class="header">
+		<i class="fas fa-key">
+		</i>Email OTP Verification
+	  </div>
+	  <!-- ✅ Show Error Message -->
+	  [#if errorMessage?? &amp;&amp; errorMessage?length gt 0]
+	  <div role="alert" align="center" class="alert alert-danger mt-3 error">
+		<p>${errorMessage}
+		</p>
+	  </div>
+	  [/#if]
+	  [#if matches?? &amp;&amp; !matches]
+	  <div role="alert" align="center" class="alert alert-danger mt-3 error">
+		<p>Invalid OTP. Please try again.
+		</p>
+	  </div>
+	  [/#if]
+	  <div class="content">
+		<p class="text-center">A verification code has been sent to:
+		</p>
+		<p class="text-center email-display">${email}
+		</p>
+		<!-- OTP Submission Form -->
+		<form method="post" enctype="application/x-www-form-urlencoded">
+		  <div class="form-group">
+			<label for="passcode" class="form-label">Enter OTP: <span class="required">*</span></label>
+			<input type="text" id="passcode" name="passcode" pattern="[0-9]+" required="" placeholder="000000" class="form-control">
 		  </div>
-		  <div id="ix28u" data-i18n="otp.otp_verification" class="text-2xl font-semi-bold leading-normal">
-		  </div>
-		  [#assign exists = (accountExists!false)]
-		  <div id="ipvtc">
-			[#if exists]
-			<span data-i18n="otp.need_verification_msg" class="text-red-600"></span>
-			[#else]
-			<span data-i18n="otp.user_not_registered" class="text-red-600"></span>
-			<span class="i text-red-600">${email}</span>
-			[/#if]
-		  </div>
-		  <div class="inline-flex items-center justify-center w-full">
-			<hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700">
-			<span data-i18n="otp.otp_sent_message_frag1" class="absolute px-3 font-medium text-white-900 -translate-x-1-2 bg-white left-1-2 dark:text-white dark:bg-gray-900">
-			</span>
-		  </div>
-		</div>
-		[#if !matches]
-		<div id="ixi4i" align="center" data-i18n="otp.incorrect_otp_entered" class="fs-6 text-red-600 mb-4">
-		</div>
-		[/#if]
-		<form method="post" enctype="application/x-www-form-urlencoded" class="my-8">
-		  <div class="relative mb-2">
-			<label for="code" data-i18n="otp.enter_otp" class="label mt-2 ml-1 leading-tighter text-gray-600 text-base cursor-text">Enter OTP</label>
-			<input type="text" name="passcode" id="passcode" pattern="[0-9]+" placeholder="000000" autocomplete="off" required="" autofocus="" class="bg-gray-50 w-full rounded px-3 border border-gray-300 pt-2 pb-2 focus:border-green-700">
-		  </div>
-		  <div class="space-y-9">
-			<div class="text-sm flex justify-between items-center">
-			  <button type="submit" value="Continue" data-i18n="otp.continue" class="py-2 px-6 rounded text-white btn bg-green-500 hover:bg-green-600 button-gradient">Submit</button>
-			</div>
+		  <div class="buttons">
+			<button type="submit" class="btn btn-primary">Continue</button>
 		  </div>
 		</form>
-		<form method="post" enctype="application/x-www-form-urlencoded" class="mb-2">
-		  <div class="d-flex justify-content-center">
-			<span data-i18n="otp.email_not_received"></span>
-			<button type="submit" id="resend-2" name="resend" value="yes" data-i18n="otp.resent_code" class="text-sm font-bold text-green-500">
-			  Resend code
-			</button>
+		<!-- Resend Code -->
+		<form method="post" enctype="application/x-www-form-urlencoded" class="resend-form">
+		  <p class="text-sm text-center mt-4">Didn't receive the code?
+		  </p>
+		  <div align="center">
+			<button type="submit" name="resend" value="yes" class="btn btn-secondary resend-btn">Resend Code</button>
 		  </div>
 		</form>
 	  </div>
 	</div>
   
   
-  
-  
 </body>
+<style>
+	body {
+	  font-family: Arial, sans-serif;
+	  background-color: #f8f9fa;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  height: 100vh;
+	  margin: 0;
+	}
+	.otp-container {
+	  width: 100%;
+	  max-width: 500px;
+	  background: white;
+	  border-radius: 5px;
+	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	  overflow: hidden;
+	}
+	.header {
+	  background: #28a745;
+	  padding: 15px;
+	  color: white;
+	  font-size: 20px;
+	  font-weight: bold;
+	  display: flex;
+	  align-items: center;
+	}
+	.header i {
+	  margin-right: 10px;
+	}
+	.content {
+	  padding: 20px;
+	}
+	.form-group {
+	  margin-bottom: 15px;
+	}
+	.form-label {
+	  font-weight: bold;
+	  display: block;
+	  margin-bottom: 5px;
+	}
+	.form-control {
+	  width: 95%;
+	  padding: 10px;
+	  font-size: 14px;
+	  border: 1px solid #ced4da;
+	  border-radius: 5px;
+	}
+	.required {
+	  color: red;
+	}
+	.error {
+	  font-weight: bold;
+	  color: red;
+	}
+	.email-display {
+	  font-weight: bold;
+	  color: #28a745;
+	  font-size: 16px;
+	  margin-bottom: 20px;
+	}
+	.buttons {
+	  margin-top: 20px;
+	  display: flex;
+	  justify-content: center;
+	}
+	.btn {
+	  padding: 10px 20px;
+	  font-size: 15px;
+	  border: none;
+	  border-radius: 5px;
+	  cursor: pointer;
+	}
+	.btn-primary {
+	  background-color: #007bff;
+	  color: white;
+	}
+	.btn-primary:hover {
+	  background-color: #0056b3;
+	}
+	.btn-secondary {
+	  background-color: #6c757d;
+	  color: white;
+	}
+	.btn-secondary:hover {
+	  background-color: #5a6268;
+	}
+	.resend-form {
+	  margin-top: 15px;
+	}
+  </style>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/2.0.22/i18next.min.js"></script><script src="./locale/loc-i18next.js"></script><script src="./locale/locale.js"></script>
 </html>
