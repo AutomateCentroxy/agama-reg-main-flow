@@ -149,7 +149,9 @@ public class JansUserRegistration extends UserRegistration {
 
     private boolean associateGeneratedCodeToPhone(String phone, String code) {
         try {
+            logger.info("Associating code {} to phone {}", code, phone);
             userCodes.put(phone, code);
+            logger.info("userCodes map now: {}", userCodes);
             return true;
         } catch (Exception e) {
             logger.error("Error associating OTP code to phone {}. Error: {}", phone, e.getMessage(), e);
@@ -161,6 +163,7 @@ public class JansUserRegistration extends UserRegistration {
         try {
             logger.info("Validating OTP code {} for phone {}", code, phone);
             String storedCode = userCodes.getOrDefault(phone, "NULL");
+            logger.info("User submitted code: {} — Stored code: {}", code, storedCode);
             if (storedCode.equalsIgnoreCase(code)) {
                 userCodes.remove(phone); // Remove after successful validation
                 return true;
