@@ -2495,8 +2495,8 @@
 			"id": "repeatNode-81eab272-9bad-4d8d-9ad5-623ea7d6b550",
 			"type": "repeatNode",
 			"position": {
-				"x": 5400.170279388967,
-				"y": 2604.620345182709
+				"x": 5354.170279388967,
+				"y": 2599.620345182709
 			},
 			"data": {
 				"id": "repeatNode-81eab272-9bad-4d8d-9ad5-623ea7d6b550",
@@ -2522,14 +2522,15 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "logNode-51fed48a-31eb-481a-b5df-54eb695f89fb",
 			"type": "logNode",
 			"position": {
-				"x": 5876.419136700672,
-				"y": 2600.6618214013265
+				"x": 5820.419136700672,
+				"y": 2586.6618214013265
 			},
 			"data": {
 				"id": "logNode-51fed48a-31eb-481a-b5df-54eb695f89fb",
@@ -2538,7 +2539,7 @@
 					"x": 5650.170279388967,
 					"y": 2604.620345182709
 				},
-				"previousNodeId": "logNode-9a2b2784-7ef8-4f80-9588-9663aa53ced7",
+				"previousNodeId": "assignmentNode-be390009-3f4c-4688-83e7-50e370917ed0",
 				"agamaData": {
 					"logMessage": "\"Email OTP verification loop completed\"",
 					"logLevel": "info",
@@ -3166,39 +3167,6 @@
 			"dragging": false
 		},
 		{
-			"id": "logNode-9a2b2784-7ef8-4f80-9588-9663aa53ced7",
-			"type": "logNode",
-			"position": {
-				"x": 5650.170279388967,
-				"y": 2604.620345182709
-			},
-			"data": {
-				"id": "logNode-9a2b2784-7ef8-4f80-9588-9663aa53ced7",
-				"type": "logNode",
-				"position": {
-					"x": 5650.170279388967,
-					"y": 2604.620345182709
-				},
-				"previousNodeId": "repeatNode-81eab272-9bad-4d8d-9ad5-623ea7d6b550",
-				"branching": "continue",
-				"agamaData": {
-					"logMessage": "",
-					"logLevel": "",
-					"nodeIcon": "octicon:log-16",
-					"nodeColor": "",
-					"titleColor": "",
-					"descColor": "",
-					"displayName": "",
-					"hasComment": true,
-					"comment": ""
-				}
-			},
-			"measured": {
-				"width": 170,
-				"height": 123
-			}
-		},
-		{
 			"id": "assignmentNode-da75cecb-6a66-4585-b1eb-28ac544cfc56",
 			"type": "assignmentNode",
 			"position": {
@@ -3235,6 +3203,74 @@
 				"height": 123
 			},
 			"selected": false
+		},
+		{
+			"id": "assignmentNode-be390009-3f4c-4688-83e7-50e370917ed0",
+			"type": "assignmentNode",
+			"position": {
+				"x": 5600.170279388967,
+				"y": 2599.620345182709
+			},
+			"data": {
+				"id": "assignmentNode-be390009-3f4c-4688-83e7-50e370917ed0",
+				"type": "assignmentNode",
+				"position": {
+					"x": 5604.170279388967,
+					"y": 2599.620345182709
+				},
+				"previousNodeId": "repeatNode-81eab272-9bad-4d8d-9ad5-623ea7d6b550",
+				"branching": "continue",
+				"agamaData": {
+					"assignments": [],
+					"nodeIcon": "material-symbols:equal",
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": ""
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": false,
+			"dragging": false
+		},
+		{
+			"id": "finishNode-9d555f29-de63-415e-8ea0-ef83cd29326e",
+			"type": "finishNode",
+			"position": {
+				"x": 6043.419136700672,
+				"y": 2548.6618214013265
+			},
+			"data": {
+				"id": "finishNode-9d555f29-de63-415e-8ea0-ef83cd29326e",
+				"type": "finishNode",
+				"position": {
+					"x": 6070.419136700672,
+					"y": 2586.6618214013265
+				},
+				"previousNodeId": "logNode-51fed48a-31eb-481a-b5df-54eb695f89fb",
+				"agamaData": {
+					"nodeColor": "",
+					"titleColor": "",
+					"descColor": "",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"flowfilename": "",
+					"returnVariable": "",
+					"nodeIcon": "material-symbols:line-end-square-rounded"
+				}
+			},
+			"measured": {
+				"width": 170,
+				"height": 123
+			},
+			"selected": true,
+			"dragging": false
 		}
 	],
 	"edges": [
@@ -4758,10 +4794,10 @@
 			"targetHandle": "target_rrfNode-fa9c7a9f-8815-4937-afee-66dc29f113ce"
 		},
 		{
-			"id": "repeatNode-81eab272-9bad-4d8d-9ad5-623ea7d6b550-logNode-9a2b2784-7ef8-4f80-9588-9663aa53ced7",
+			"id": "repeatNode-81eab272-9bad-4d8d-9ad5-623ea7d6b550-assignmentNode-be390009-3f4c-4688-83e7-50e370917ed0",
 			"type": "default",
 			"source": "repeatNode-81eab272-9bad-4d8d-9ad5-623ea7d6b550",
-			"target": "logNode-9a2b2784-7ef8-4f80-9588-9663aa53ced7",
+			"target": "assignmentNode-be390009-3f4c-4688-83e7-50e370917ed0",
 			"labelBgPadding": [
 				8,
 				4
@@ -4777,10 +4813,29 @@
 			"sourceHandle": "source_repeatNode-81eab272-9bad-4d8d-9ad5-623ea7d6b550_continue"
 		},
 		{
-			"id": "logNode-9a2b2784-7ef8-4f80-9588-9663aa53ced7-logNode-51fed48a-31eb-481a-b5df-54eb695f89fb",
+			"id": "logNode-51fed48a-31eb-481a-b5df-54eb695f89fb-finishNode-9d555f29-de63-415e-8ea0-ef83cd29326e",
 			"type": "default",
-			"source": "logNode-9a2b2784-7ef8-4f80-9588-9663aa53ced7",
+			"source": "logNode-51fed48a-31eb-481a-b5df-54eb695f89fb",
+			"target": "finishNode-9d555f29-de63-415e-8ea0-ef83cd29326e",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"label": "",
+			"labelBgStyle": {
+				"fill": "#009688",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"labelShowBg": true,
+			"sourceHandle": "source_logNode-51fed48a-31eb-481a-b5df-54eb695f89fb"
+		},
+		{
+			"source": "assignmentNode-be390009-3f4c-4688-83e7-50e370917ed0",
+			"sourceHandle": "source_assignmentNode-be390009-3f4c-4688-83e7-50e370917ed0",
 			"target": "logNode-51fed48a-31eb-481a-b5df-54eb695f89fb",
+			"targetHandle": "target_logNode-51fed48a-31eb-481a-b5df-54eb695f89fb",
 			"label": "",
 			"labelBgPadding": [
 				8,
@@ -4792,13 +4847,12 @@
 				"color": "#ffffff",
 				"fillOpacity": 0.7
 			},
-			"sourceHandle": "source_logNode-9a2b2784-7ef8-4f80-9588-9663aa53ced7",
-			"targetHandle": "target_logNode-51fed48a-31eb-481a-b5df-54eb695f89fb"
+			"id": "xy-edge__assignmentNode-be390009-3f4c-4688-83e7-50e370917ed0source_assignmentNode-be390009-3f4c-4688-83e7-50e370917ed0-logNode-51fed48a-31eb-481a-b5df-54eb695f89fbtarget_logNode-51fed48a-31eb-481a-b5df-54eb695f89fb"
 		}
 	],
 	"viewport": {
-		"x": -5134.475755246857,
-		"y": -2363.178095669229,
+		"x": -5155.475755246857,
+		"y": -2357.178095669229,
 		"zoom": 1.0000000000000004
 	}
 }
