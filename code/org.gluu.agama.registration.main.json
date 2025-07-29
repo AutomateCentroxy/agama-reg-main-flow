@@ -1718,7 +1718,7 @@
 				"previousNodeId": "assignmentNode-47c79889-dd1f-48c2-83ac-8e7969a23807",
 				"agamaData": {
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
-					"maxIteration": "6",
+					"maxIteration": "4",
 					"maxIterationVariableName": "maxSMS",
 					"nodeColor": "",
 					"titleColor": "",
@@ -1732,7 +1732,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false
 		},
 		{
@@ -2508,7 +2508,7 @@
 				"previousNodeId": "assignmentNode-a9e37265-caea-496e-b174-58334123e826",
 				"agamaData": {
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
-					"maxIteration": "6",
+					"maxIteration": "4",
 					"maxIterationVariableName": "EmailMax",
 					"nodeColor": "",
 					"titleColor": "",
@@ -3276,7 +3276,7 @@
 				"width": 170,
 				"height": 123
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		}
 	],
@@ -4858,8 +4858,8 @@
 		}
 	],
 	"viewport": {
-		"x": -5155.475755246857,
-		"y": -2357.178095669229,
-		"zoom": 1.0000000000000004
+		"x": 734.8037217468282,
+		"y": 192.99285235123307,
+		"zoom": 0.5358867412311684
 	}
 }
