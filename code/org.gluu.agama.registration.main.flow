@@ -26,7 +26,7 @@ maxJourney = Repeat 6 times max
      // The OTP Code has been send to user.
      Log "@info OTP generated and send to: " phone
      otpValidationResult = false
-     maxSMS = Repeat 6 times max
+     maxSMS = Repeat 4 times max
           //  Show UI to collect OTP code from user.
           otpCreds = RRF "smsOtp.ftlh" uiFeedback
           When otpCreds.hasRequestedNewCode is "yes"
@@ -81,7 +81,7 @@ maxJourney = Repeat 6 times max
                                              // The OTP Code has been send to user.
                                              Log "@info OTP generated and send to: " email
                                              EmailOtpValidationResult = false
-                                             EmailMax = Repeat 6 times max
+                                             EmailMax = Repeat 4 times max
                                                   // "Email OTP verification loop Started"
                                                   Log "@info Email OTP verification loop Started"
                                                   uiFeedback.email = email
@@ -126,8 +126,8 @@ maxJourney = Repeat 6 times max
                                              uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                                              // Email OTP verification loop completed
                                              Log "@info Email OTP verification loop completed"
-                                             it_cuvwm = {success:false, error: "User update flow reached max attempts. Try later"}
-                                             Finish it_cuvwm
+                                             it_pgaed = {success:false, error: "User update flow reached max attempts. Try later"}
+                                             Finish it_pgaed
                                         Otherwise
                                              // Password and Confirm password doesn't match
                                              Log "@trace Password and Confirm password doesn't match"
@@ -161,5 +161,5 @@ maxJourney = Repeat 6 times max
 // Maximum attempt reached
 Log "@info Maximum attempt reached"
 // User Registration flow failed
-it_vefuq = {success:false, error: "User registration flow reached max attempts try later"}
-Finish it_vefuq
+it_unrkb = {success:false, error: "User registration flow reached max attempts try later"}
+Finish it_unrkb
